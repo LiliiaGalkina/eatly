@@ -584,8 +584,8 @@ body {
 
   &__graf {
     position: absolute;
-    bottom: -70px;
-    left: -20px;
+    bottom: -30px;
+    left: -70px;
     z-index: 4;
   }
 }
@@ -900,7 +900,7 @@ body {
 
 @media (max-width: 820px) {
 	.hero {
-		padding: 5.7rem 0 7.5rem;
+		padding: 5.7rem 0 13rem;
 
 		&__items {
 			flex-direction: column;
@@ -920,11 +920,16 @@ body {
 		&__imges {
 			width: 100%;
 		}
+
+		&__graf {
+			left: -30px;
+		}
 	}
 }
 
 @media (max-width: 500px) {
 	.hero {
+		padding: 5.7rem 0 7.5rem;
 		&__headline {
 			margin-bottom: 0.5rem;
 			font-size: 0.93rem;
