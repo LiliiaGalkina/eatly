@@ -727,3 +727,97 @@ body {
     left: -20px;
   }
 }
+/*achievements*/
+.achievements {
+  padding: 5.7rem 0 5.47rem;
+  background: url("../img/home/achievements-fon.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.achievements__items {
+  margin: 0 auto;
+  max-width: 101.92rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.achievements__item {
+  padding: 0 6.6rem;
+  text-align: center;
+}
+.achievements__item:nth-child(2) {
+  border-left: 1px solid rgba(197, 197, 197, 0.15);
+  border-right: 1px solid rgba(197, 197, 197, 0.15);
+}
+.achievements__digit {
+  margin-bottom: 1.08rem;
+  font-family: "Public Sans", serif;
+  font-size: 4.32rem;
+  line-height: 125%;
+  font-weight: 700;
+}
+.achievements__text {
+  font-size: 1.44rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #C5BFED;
+}
+
+@media (max-width: 1024px) {
+  .achievements {
+    padding: 4.05rem 0 3.92rem;
+  }
+  .achievements__item {
+    padding: 0 4.7rem;
+  }
+  .achievements__digit {
+    font-size: 3.07rem;
+  }
+  .achievements__text {
+    font-size: 1.02rem;
+  }
+}
+@media (max-width: 768px) {
+  .achievements__item {
+    padding: 0 3.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .achievements__items {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.5rem;
+  }
+  .achievements__item:nth-child(2) {
+    border-right: none;
+  }
+  .achievements__item:last-child {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 375px) {
+  .achievements {
+    padding: 3.9rem 0 2.26rem;
+  }
+  .achievements__items {
+    grid-template-columns: 1fr;
+  }
+  .achievements__item {
+    padding: 6rem 0;
+  }
+  .achievements__item:last-child {
+    grid-column: span 1;
+  }
+  .achievements__item:nth-child(2) {
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid rgba(197, 197, 197, 0.15);
+    border-bottom: 1px solid rgba(197, 197, 197, 0.15);
+  }
+  .achievements__digit {
+    font-size: 4.32rem;
+  }
+  .achievements__text {
+    margin: 0 auto;
+    max-width: 20.8rem;
+    font-size: 1.44rem;
+  }
+}
