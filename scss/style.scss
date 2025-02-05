@@ -1458,7 +1458,12 @@ body {
 
 /*top-restaurants*/
 .top-restaurants {
-    padding: 10rem 0 23.17rem;
+	padding: 0 1.5rem;
+	.container {
+		padding: 10rem 0 12rem;
+		border-top: 0.1rem solid #CBCBCB;
+		border-bottom: 0.1rem solid #CBCBCB;
+	 }
     // .top-restaurants__title
 
     &__title {
@@ -1493,7 +1498,15 @@ body {
         justify-content: flex-end;
         p {
             margin-right: 2rem;
+				color: #ACADB9;
         }
+		  transition: all 0.5s ease;
+		  &:hover {
+			p {
+				color: #606168;
+				border-bottom: 0.1rem solid #606168;
+			}
+		  }
     }
 
     // .top-restaurants__arrow
@@ -1517,30 +1530,50 @@ body {
     // .card-restaurants__img
 
     &__img {
-        width: 100%;
+       height: 17.61rem;
         img {
             width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 3rem 3rem 0 0;
         }
     }
 
     // .card-restaurants__content
 
     &__content {
+		padding: 1.09rem 2.67rem 1.8rem 3.4rem;
     }
 
     // .card-restaurants__category
 
     &__category {
+		padding: 0.3rem 0.86rem;
+		max-width: fit-content;
+		border-radius: 0.54rem;
+		background-color: #F7EDD0;
+		font-family: "Poppins", serif;
+		font-size: 1.28rem;
+		line-height: 150%;
+		color: #DAA31A;
+
 
         // .card-restaurants__category_red
 
         &_red {
+			background-color: #F7C5BA;
+			color: #FB471D;
         }
     }
 
     // .card-restaurants__title
 
     &__title {
+		margin-bottom: 0.2rem;
+		font-family: "Poppins", serif;
+		font-size: 2.58rem;
+		line-height: 162%;
+		font-weight: 600;
     }
 
     // .card-restaurants__dop-info
@@ -1549,24 +1582,150 @@ body {
     }
 }
 .dop-info-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-family: "Manrope", serif;
+	font-size: 1.93rem;
+	line-height: 133%;
+	color: #8E97A6;
 
     // .dop-info-card__left
 
     &__left {
+		display: flex;
+		align-items: flex-end;
     }
 
     // .dop-info-card__time
 
     &__time {
+		margin-right: 1.4rem;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 48%;
+			right: -0.9rem;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background-color: #8E97A6;
+		}
     }
 
     // .dop-info-card__rating
 
     &__rating {
+		margin-left: 0.64rem;
     }
 
     // .dop-info-card__right
 
     &__right {
+		max-width: 4rem;
+		img {
+			width: 100%;
+		}
     }
 }
+
+@media (max-width: 1024px) {
+	.top-restaurants {
+		.container {
+		padding: 7.1rem 0 8.5rem;	
+		}
+
+		&__title {
+			margin-bottom: 6.04rem;
+			font-size: 3.2rem;
+		}
+
+		&__items {
+			gap: 2.16rem;
+		}
+	}
+
+	.card-restaurants {
+		&__img {
+			height: 12.53rem;
+		}
+
+		&__content {
+			padding: 0.78rem 1.2rem 1.2rem;
+		}
+
+		&__category {
+			font-size: 0.9rem;
+		}
+
+		&__title {
+			font-size: 1.83rem;
+		}
+	}
+
+	.dop-info-card {
+		font-size: 1.38rem;
+		img {
+			width: 1.83rem;
+		}
+
+		&__right {
+			width: 2.85rem;
+			height: 2.85rem;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.top-restaurants {
+		.container {
+			padding: 8.4rem 0 6.6rem;
+		}
+
+		&__title {
+			margin-bottom: 5.9rem;
+			font-size: 3rem;
+		}
+
+		&__items {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		&__item {
+			grid-column: span 2;
+
+			&:last-child {
+				grid-column: 2 / 4;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.top-restaurants {
+		&__items {
+			grid-template-columns: 1fr;
+		}
+
+		&__item {
+			grid-column: span 1;
+
+			&:last-child {
+				grid-column: 1 / 2;
+			}
+		}
+	}
+
+	.card-restaurants {
+		&__img {
+			height: 14rem;
+		}
+	}
+}
+
+
