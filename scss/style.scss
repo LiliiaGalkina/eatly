@@ -800,8 +800,269 @@ body {
             }
         }
     }
+}
 
+@media (max-width: 1024px) {
+	.hero {
+		&__headline {
+			font-size: 1.1rem;
+		}
+
+		&__stars-text {
+			font-size: 1.2rem;
+			line-height: 100%;
+		}
+
+		 &__imges-img {
+			width: 30.55rem;
+			height: 31.55rem;
+		
+		}
+
+		&__images-img-oval {
+			top: -7px;
+			left: 14px;
+		
+		}
+	}
+
+	.block-dish-mini {
+		width: 23.37rem;
+		height: auto;
+
+		&__img {
+			width: 5.23rem;
+			height: 5.77rem;
+			img {
+				width: 100%;
+				vertical-align: middle;
+			}
+		}
+
+		&__title {
+			font-size: 1.1rem;
+		}
+
+		&__text {
+			font-size: 0.7rem;
+		}
+
+		&__time {
+			font-size: 0.76rem;
+		}
+	}
+
+	.graf {
+		padding: 1rem 0;
+		width: 14.74rem;
+		height: 14.61rem;
+
+		&__img {
+			img {
+				width: 100%;
+			}
+		}
+
+		&__menu {
+			padding: 0 0.3rem;
+			margin-bottom: 1.5rem;
+		}
+		
+		&__item {
+			padding: 0.4rem;
+		}
+
+		&__link {
+			font-size: 0.49rem;
+		}
+
+		&__digits {
+			padding: 0 0.5rem;
+		}
+
+		&__digit {
+			padding: 0.5rem;
+		}
+	}
+
+	 .stars-gold__star {
+		width: 1.13rem;
 	
+		img {
+			width: 100%;
+			vertical-align: bottom;
+		}
+	 }
+}
+
+@media (max-width: 820px) {
+	.hero {
+		padding: 5.7rem 0 13rem;
+
+		&__items {
+			flex-direction: column;
+		}
+
+		&__content {
+			margin-right: 0;
+			margin-bottom: 9.5rem;
+			flex: 1 0 100%;
+			text-align: center;
+		}
+
+		&__text {
+			max-width: 100%;
+		}
+
+		&__imges {
+			width: 100%;
+		}
+
+		&__graf {
+			left: -30px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.hero {
+		padding: 5.7rem 0 7.5rem;
+		&__headline {
+			margin-bottom: 0.5rem;
+			font-size: 0.93rem;
+		}
+
+		&__title {
+			font-size: 4.62rem;
+		}
+
+		&__text {
+			font-size: 1.11rem;
+		}
+
+		&__buttons {
+			justify-content: center;
+		}
+
+		&__stars {
+			justify-content: center;
+		}
+
+		&__imges-img {
+			width: 20.39rem;
+			height: 21.06rem;
+		}
+
+		&__images-img-oval {
+			left: 10px;
+		}
+
+		&__imges-img-decor {
+			width: 4.79rem;
+			height: 4.63rem;
+			right: -45px;
+			top: 30px;
+			img {
+				width: 100%;
+			}
+		}
+
+		&__imges-dish {
+			padding: 0.5rem;
+			width: 15.6rem;
+			height: 4.25rem;
+			border-radius: 0.78rem;
+			top: -30px;
+			
+			.block-dish-mini__img {
+				margin-right: 0.86rem;
+				width: 3.49rem;
+				height: 3.85rem;
+			}
+
+			.block-dish-mini__title {
+				font-size: 0.74rem;
+			}
+
+			.block-dish-mini__text {
+				font-size: 0.47rem;
+			}
+
+			.block-dish-mini__time {
+				font-size: 0.5rem;
+				line-height: 100%;
+			}
+
+			.block-dish-mini__decor {
+				width: 1.97rem;
+				top: -17px;
+				right: -20px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		&__graf {
+			bottom: -26px;
+			left: -30px;
+		}
+	}
+
+	.graf {
+		padding: 0.6rem 0;
+		width: 9.84rem;
+		height: 9.75rem;
+		border-radius: 1rem;
+
+		&__menu {
+			margin-bottom: 1rem;
+		}
+
+		&__img {
+			margin-bottom: 0.75rem;
+		}
+
+		&__link {
+			font-size: 0.33rem;
+		}
+
+		&__digit {
+			font-size: 0.3rem;
+		}
+
+		&__decor {
+			width: 1.8rem;
+			bottom: -26px;
+			left: -14px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.hero {
+		padding: 5rem 0 7.5rem;
+
+		&__title {
+			font-size: 4rem;
+		}
+
+		&__imges-img-decor {
+			width: 4rem;
+			right: -35px;
+		}
+
+		&__imges-dish {
+			right:  -12px;
+		}
+
+		&__graf {
+			left: -20px;
+		}
+	}
 }
 
 /*achievements*/
