@@ -391,6 +391,7 @@ body {
 .hero {
   padding: 11.9rem 0 13rem;
 
+
   // .hero__items
 
   &__items {
@@ -1743,14 +1744,6 @@ body {
         gap: 3.04rem;
     }
 
-    // .top-restaurants__item
-
-    &__item {
-        border-radius: 3rem;
-        border: 0.125rem solid #F4F4F6;
-        box-shadow: 0.595rem 7.135rem 3.567rem rgba(229, 229, 229, 0.7);
-    }
-
     // .top-restaurants__button
 
     &__button {
@@ -1781,13 +1774,19 @@ body {
             display: block;
             width: 1.58rem;
             height: 0.226rem;
-            background-color: #ACADB9;
+            background-color: #d5ccd9;
         }
     }
 }
 
 .card-restaurants {
-
+	border-radius: 3rem;
+   border: 0.125rem solid #F4F4F6;
+   box-shadow: 0.595rem 7.135rem 3.567rem rgba(229, 229, 229, 0.7);
+	transition: all 0.5s ease;
+	&:hover {
+		background-color: #ececf0;
+	}
     // .card-restaurants__img
 
     &__img {
@@ -1836,11 +1835,6 @@ body {
 		line-height: 162%;
 		font-weight: 600;
     }
-
-    // .card-restaurants__dop-info
-
-    &__dop-info {
-    }
 }
 .dop-info-card {
 	display: flex;
@@ -1885,6 +1879,7 @@ body {
 
     &__right {
 		max-width: 4rem;
+		cursor: pointer;
 		img {
 			width: 100%;
 		}
@@ -1988,5 +1983,113 @@ body {
 		}
 	}
 }
+
+/*top-dishes*/
+
+.top-dishes {
+	padding: 10rem 0 12rem;
+		// .top-dishes__title
+
+		&__title {
+			margin-bottom: 7.59rem;
+			text-align: center;
+			font-size: 4.5rem;
+		}
+
+		// .top-dishes__items
+
+		&__items {
+			margin-bottom: 6.54rem;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 2.08rem;
+		}
+
+		// .top-dishes__item
+
+		&__item {
+			position: relative;
+			.card-restaurants__img {
+				padding-top: 2.5rem;
+				height: 20.8rem;
+				display: flex;
+				justify-content: center;
+				
+				img {
+					width: auto;
+					height: 100%;
+					
+				}
+			}
+
+			.card-restaurants__content {
+				padding: 1rem 1rem 2.9rem;
+			}
+
+			.card-restaurants__title {
+				font-size: 2.3rem;
+			}
+		}
+}
+
+.card-restaurants {
+
+	&__heart {
+		position: absolute;
+		top: 1.6rem;
+		right: 1.2rem;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		:hover {
+			transform: scale(1.1);
+		}
+	}
+
+		&__category {
+			// .card-restaurants__category_green
+			&_green {
+				background-color: rgba(51, 172, 100, 0.2);
+				color: #309D5B;
+			}
+		}
+
+		
+		// .card-restaurants__price
+
+		&__price {
+			margin-top: 1.3rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		// .card-restaurants__price-digit
+
+		&__price-digit {
+			font-family: "Manrope", serif;
+			font-size: 2.59rem;
+			line-height: 156%;
+			font-weight: 700;
+			color: #323142;
+			span {
+				font-size: 1.88rem;
+				line-height: 214%;
+				color: #8E97A6;
+			}
+		}
+
+		// .card-restaurants__price-img
+
+		&__price-img {
+			width: 4.38rem;
+			height: 3.97rem;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+}
+
 
 
