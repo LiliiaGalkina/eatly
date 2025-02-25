@@ -1679,6 +1679,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.06rem;
 }
+
 .item-purchases {
   padding: 2.51rem;
   border: 0.157rem solid #EDF2F7;
@@ -1882,4 +1883,116 @@ body {
   .item-purchases__sum {
     font-size: 1.2rem;
   }
+}
+/*feedback*/
+.feedback {
+  padding: 11.6rem 0 18.2rem;
+}
+.feedback__title {
+  margin-bottom: 8rem;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.feedback__slider {
+  position: relative;
+}
+
+.slider__item {
+  padding: 3.8rem 4.3rem;
+  max-width: 100%;
+  border-radius: 2.09rem;
+  background-color: #FFFFFF;
+  font-family: "Poppins", serif;
+}
+.slider__item:not(:last-child) {
+  margin-right: 3rem;
+}
+.slider .slick-arrow {
+  position: absolute;
+  bottom: -5rem;
+  font-size: 0;
+  width: 3rem;
+  height: 3rem;
+}
+.slider .slick-arrow.slick-prev {
+  left: calc(50% - 9rem);
+  background: url("../img/home/arrow-left.svg") 0 0/100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  transform: rotate(180deg);
+  right: calc(50% - 6rem);
+  background: url("../img/home/arrow-left.svg") 0 0/100% no-repeat;
+}
+.slider__head {
+  margin-bottom: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider__head-img {
+  margin-right: 2.09rem;
+  width: 7.1rem;
+  height: 7.1rem;
+}
+.slider__head-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider__head-body {
+  display: flex;
+  align-items: center;
+}
+.slider__head-name {
+  font-size: 2.09rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #030314;
+}
+.slider__head-date {
+  font-family: "Quicksand", serif;
+  font-size: 1.67rem;
+  line-height: 156%;
+  color: #5E5D5D;
+}
+.slider__head-quote {
+  justify-self: flex-end;
+  width: 5.87rem;
+  height: 4.42rem;
+}
+.slider__head-quote img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider__text {
+  margin-bottom: 3.9rem;
+  font-size: 1.8rem;
+  line-height: 145%;
+  font-style: italic;
+  color: #636363;
+}
+.slider__stars .stars-gold__star {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.slider__stars .stars-gold__star img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
 }
