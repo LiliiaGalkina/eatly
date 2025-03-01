@@ -29,3 +29,33 @@ $(document).ready(function () {
 		]
 	})
 });
+
+//изменение стрелок при прокрутке слайдов
+
+document.addEventListener("DOMContentLoaded", () => {
+	const prevArrow = document.querySelector(".slick-prev");
+	const nextArrow = document.querySelector(".slick-next");
+	const slides = document.querySelectorAll(".slider__item");
+	
+	const arrowCheck = (arrow) => {
+		if (arrow.classList.contains("slick-disabled")) {
+			arrow.style.opacity = 0.2;
+		} else {
+			arrow.style.opacity = 1;
+		}
+	}
+
+	arrowCheck(prevArrow);
+	arrowCheck(nextArrow);
+
+	nextArrow.addEventListener("click", () => {
+		arrowCheck(prevArrow);
+   	arrowCheck(nextArrow);
+	})
+
+		prevArrow.addEventListener("click", () => {
+      arrowCheck(prevArrow);
+      arrowCheck(nextArrow);
+    });
+
+})
