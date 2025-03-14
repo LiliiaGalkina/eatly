@@ -93,6 +93,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  transition: all 0.5s ease;
 }
 .logo__img {
   margin-right: 1.1rem;
@@ -108,6 +109,9 @@ body {
   line-height: 130%;
   font-weight: 600;
   color: #6c5fbc;
+}
+.logo:hover {
+  opacity: 0.6;
 }
 
 .menu__list {

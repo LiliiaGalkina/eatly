@@ -140,9 +140,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all 0.5s ease;
   // .logo__img
 
   &__img {
@@ -152,6 +152,7 @@ body {
     img {
       width: 100%;
     }
+
   }
 
   // .logo__text
@@ -163,6 +164,10 @@ body {
     font-weight: 600;
     color: #6c5fbc;
   }
+
+  &:hover {
+        opacity: 0.6;
+    }
 }
 .menu {
   // .menu__list
