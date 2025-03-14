@@ -3300,3 +3300,222 @@ body {
         }
     }
 }
+
+/*MENU----------------------------------------------*/
+
+.search-info {
+    padding: 12rem 0 6.8rem;
+
+    // .search-info__items
+
+    &__items {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .search-info__item
+
+    &__item {
+    }
+}
+
+.left {
+    max-width: 75.8rem;
+    width: 61%;
+
+    // .left__promo
+
+    &__promo {
+        margin-bottom: 14.3rem;
+        max-height: 25.1rem;
+        position: relative;
+    }
+
+    // .left__search
+
+    &__search {
+    }
+
+    // .left__search-input
+
+    &__search-input {
+    }
+
+    // .left__search-buttons
+
+    &__search-buttons {
+    }
+
+    // .left__search-food-button
+
+    &__search-food-button {
+    }
+
+    // .left__search-restaurant-button
+
+    &__search-restaurant-button {
+    }
+}
+.promo-left {
+    margin-right: 1.5rem;
+    width: 100%;
+    padding: 3.02rem 0 2.9rem 6.1rem;
+    font-family: "Poppins", serif;
+    background-color: #6C5FBC;
+    border-radius: 1.87rem;
+    
+
+    // .promo__title
+
+    &__title {
+        font-size: 7.5rem;
+        line-height: 100%;
+        font-weight: 800;
+        color: #F7F8FA;
+    }
+
+    // .promo__text
+
+    &__text {
+        font-size: 8.74rem;
+        line-height: 100%;
+        font-weight: 800;
+        color: #7C6FCD;
+    }
+
+    // .promo__img
+
+    &__img {
+        position: absolute;
+        top: 5rem;
+        right: 3.57rem;
+        max-width: 25.4rem;
+        img {
+            width: 100%;
+        }
+    }
+
+   
+    // .promo__decor
+
+    &__decor {
+    }
+}
+
+.right {
+    max-width: 37.7rem;
+    width: 30%;
+
+    // .right__title
+
+    &__title {
+    }
+
+    // .right__category
+
+    &__category {
+    }
+
+    // .right__category-item
+
+    &__category-item {
+    }
+
+    // .right__sort
+
+    &__sort {
+    }
+
+    // .right__sort-items
+
+    &__sort-items {
+    }
+
+    // .right__sort-item
+
+    &__sort-item {
+    }
+
+    // .right__price
+
+    &__price {
+    }
+
+    // .right__price-progress
+
+    &__price-progress {
+    }
+
+    // .right__price-circle
+
+    &__price-circle {
+    }
+
+    // .right__price-digits
+
+    &__price-digits {
+    }
+
+    // .right__price-digit
+
+    &__price-digit {
+    }
+
+    // .right__button
+
+    &__button {
+    }
+}
+.category-card {
+
+    // .category-card_yellow
+
+    &_yellow {
+    }
+
+    // .category-card_red
+
+    &_red {
+    }
+
+    // .category-card_orange
+
+    &_orange {
+    }
+
+    // .category-card_blue
+
+    &_blue {
+    }
+
+    // .category-card__img
+
+    &__img {
+    }
+
+    // .category-card__text
+
+    &__text {
+    }
+
+    // .category-card__text-yellow
+
+    &__text-yellow {
+    }
+
+    // .category-card__text-red
+
+    &__text-red {
+    }
+
+    // .category-card__text-orange
+
+    &__text-orange {
+    }
+
+    // .category-card__text-blue
+
+    &__text-blue {
+    }
+}

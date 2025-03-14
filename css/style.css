@@ -2411,3 +2411,54 @@ body {
     position: static;
   }
 }
+/*MENU----------------------------------------------*/
+.search-info {
+  padding: 12rem 0 6.8rem;
+}
+.search-info__items {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  max-width: 75.8rem;
+  width: 61%;
+}
+.left__promo {
+  margin-bottom: 14.3rem;
+  max-height: 25.1rem;
+  position: relative;
+}
+.promo-left {
+  margin-right: 1.5rem;
+  width: 100%;
+  padding: 3.02rem 0 2.9rem 6.1rem;
+  font-family: "Poppins", serif;
+  background-color: #6C5FBC;
+  border-radius: 1.87rem;
+}
+.promo-left__title {
+  font-size: 7.5rem;
+  line-height: 100%;
+  font-weight: 800;
+  color: #F7F8FA;
+}
+.promo-left__text {
+  font-size: 8.74rem;
+  line-height: 100%;
+  font-weight: 800;
+  color: #7C6FCD;
+}
+.promo-left__img {
+  position: absolute;
+  top: 5rem;
+  right: 3.57rem;
+  max-width: 25.4rem;
+}
+.promo-left__img img {
+  width: 100%;
+}
+.right {
+  max-width: 37.7rem;
+  width: 30%;
+}
