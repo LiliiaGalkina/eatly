@@ -2414,6 +2414,7 @@ body {
 /*MENU----------------------------------------------*/
 .search-info {
   padding: 12rem 0 6.8rem;
+  font-family: "Poppins", serif;
 }
 .search-info__items {
   min-width: 100%;
@@ -2429,7 +2430,68 @@ body {
   max-height: 25.1rem;
   position: relative;
 }
+.left__search {
+  width: 100%;
+  position: relative;
+}
+.left__search-input {
+  margin-bottom: 3.51rem;
+  padding: 2.13rem 2.85rem 2.13rem 7.82rem;
+  width: 100%;
+  height: 7.5rem;
+  background-color: #EDEDED;
+  border-radius: 1.95rem;
+  font-size: 2.05rem;
+  line-height: 117%;
+  font-weight: 500;
+}
+.left__search-input::-moz-placeholder {
+  color: #AAABBA;
+}
+.left__search-input::placeholder {
+  color: #AAABBA;
+}
+.left__search-img {
+  width: 2.08rem;
+  height: 2.71rem;
+  position: absolute;
+  top: 2.39rem;
+  left: 2.85rem;
+}
+.left__search-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.left__search-buttons {
+  width: 100%;
+  display: flex;
+}
+.left__search-button-double {
+  width: 50%;
+  height: 7.5rem;
+  background-color: #F3F5F6;
+  border: 0.22rem solid #6C5FBC;
+  color: #6C5FBC;
+  font-size: 1.95rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.left__search-button-double:hover {
+  background-color: #6C5FBC;
+  color: #F3F5F6;
+}
+.left__search-food-button {
+  border-radius: 1.51rem 0 0 1.51rem;
+}
+.left__search-restaurant-button {
+  border-radius: 0 1.51rem 1.51rem 0;
+  border-left: none;
+}
+
 .promo-left {
+  position: relative;
   margin-right: 1.5rem;
   width: 100%;
   padding: 3.02rem 0 2.9rem 6.1rem;
@@ -2458,7 +2520,131 @@ body {
 .promo-left__img img {
   width: 100%;
 }
+.promo-left__decor {
+  width: 5.18rem;
+  height: 3.64rem;
+  position: absolute;
+  top: -2.5rem;
+  right: -4.5rem;
+}
+.promo-left__decor img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .right {
+  padding: 3.2rem 3.2rem 3.9rem;
   max-width: 37.7rem;
   width: 30%;
+  border-radius: 2.38rem;
+  box-shadow: 1rem 2.5rem 6rem rgba(0, 90, 100, 0.2);
+  font-family: "Poppins", serif;
+}
+.right__title {
+  margin-bottom: 1.74rem;
+  font-size: 2.15rem;
+  line-height: 135%;
+  font-weight: 600;
+  color: #323142;
+}
+.right__category {
+  margin-bottom: 2.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right__category-item {
+  width: 6.62rem;
+  height: 9.64rem;
+  border-radius: 1.47rem;
+  font-size: 1.18rem;
+  font-weight: 500;
+}
+.right__sort {
+  margin-bottom: 2.89rem;
+  display: flex;
+  justify-content: space-between;
+}
+.right__sort-item {
+  font-size: 1.55rem;
+  line-height: 187%;
+  font-weight: 500;
+  color: #ACADB9;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.right__sort-item:hover {
+  color: #6C5FBC;
+}
+.right__price {
+  margin-bottom: 7rem;
+  position: relative;
+}
+.right__price-progress {
+  margin-bottom: 1.23rem;
+  width: 100%;
+  height: 0.53rem;
+  border-radius: 0.88rem;
+  overflow: hidden;
+}
+.right__price-progress::-webkit-progress-bar {
+  background-color: #6C5FBC;
+}
+.right__price-circle {
+  position: absolute;
+  top: -0.4rem;
+  left: 3.52rem;
+  width: 2.46rem;
+  height: 2.46rem;
+}
+.right__price-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.right__price-digits {
+  display: flex;
+  justify-content: space-between;
+}
+.right__price-digit {
+  font-size: 1.06rem;
+  line-height: 281%;
+  font-weight: 500;
+  color: #C2C3CB;
+}
+.right__button {
+  width: 100%;
+}
+
+.category-card {
+  padding-top: 1.31rem;
+  padding-bottom: 1.23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1.47rem 2.21rem rgba(135, 125, 200, 0.2509803922);
+}
+.category-card_yellow {
+  background-color: #FFDE8A;
+  color: #D69900;
+}
+.category-card_red {
+  background-color: rgba(251, 71, 29, 0.5019607843);
+  color: #FB471D;
+}
+.category-card_orange {
+  background-color: #f9e5cb;
+  color: #E28B14;
+}
+.category-card_blue {
+  background-color: #c5d4ff;
+  color: #002073;
+}
+.category-card__text {
+  font-size: 1.31rem;
+  font-weight: 500;
 }
