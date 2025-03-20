@@ -3409,7 +3409,7 @@ body {
     position: relative;
     margin-right: 1.5rem;
     width: 100%;
-    padding: 3.02rem 0 2.9rem 6.1rem;
+    padding: 3.02rem 0 2.9rem 2.1rem;
     font-family: "Poppins", serif;
     background-color: #6C5FBC;
     border-radius: 1.87rem;
@@ -3437,9 +3437,9 @@ body {
 
     &__img {
         position: absolute;
-        top: 5rem;
-        right: 3.57rem;
-        max-width: 25.4rem;
+        top: 7rem;
+        right: 1.57rem;
+        max-width: 20.4rem;
         img {
             width: 100%;
         }
@@ -3463,7 +3463,7 @@ body {
 }
 
 .right {
-    padding: 3.2rem 3.2rem 3.9rem;
+    padding: 3.2rem;
     max-width: 37.7rem;
     width: 30%;
     border-radius: 2.38rem;
@@ -3492,7 +3492,7 @@ body {
     // .right__category-item
 
     &__category-item {
-        width: 6.62rem;
+        width: 5.62rem;
         height: 9.64rem;
         border-radius: 1.47rem;
         font-size: 1.18rem;
@@ -3592,6 +3592,7 @@ body {
     &_yellow {
         background-color: #FFDE8A;
         color: #D69900;
+        border: 1px solid #FFDE8A;
     }
 
     // .category-card_red
@@ -3599,6 +3600,7 @@ body {
     &_red {
         background-color: #FB471D80;
         color: #FB471D;
+        border: 1px solid #FB471D80;
     }
 
     // .category-card_orange
@@ -3606,6 +3608,7 @@ body {
     &_orange {
         background-color: #f9e5cb;
         color: #E28B14;
+        border: 1px solid #f9e5cb;
     }
 
     // .category-card_blue
@@ -3613,6 +3616,7 @@ body {
     &_blue {
         background-color: #c5d4ff;
         color: #002073;
+        border: 1px solid #c5d4ff;
     }
     
 
@@ -3692,3 +3696,127 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    .search-info {
+        padding: 8.53rem 0 6.8rem;
+    }
+
+    .left {
+        max-width: 57.89rem;
+    }
+
+    .promo-left {
+        &__title {
+            font-size: 5.33rem;
+        }
+
+        &__text {
+            font-size: 6.22rem;
+        }
+
+        &__img {
+            max-width: 15.08rem;
+        }
+    }
+
+    .right {
+        max-width: 30.81rem;
+        padding: 1.27rem;
+
+        &__title {
+            margin-bottom: 1.2rem;
+            font-size: 1.52rem;
+        }
+
+        &__category-item {
+            width: 4.71rem;
+            height: 6.85rem;
+            border-radius: 1.47rem;
+            font-size: 1.18rem;
+        }
+
+        &__sort-item {
+            font-size: 1.1rem;
+        }
+
+        &__price-circle {
+            width: 1.75rem;
+            height: 1.75rem;
+            top: 0rem;
+        }
+
+        &__price-digit {
+            font-size: 0.75rem;
+        }
+    }
+
+    .category-card {
+        &__img {
+            max-width: 2.8rem;
+            max-height: 2.5rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__text {
+            font-size: 0.84rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .left {
+        margin-right: 4.5rem;
+
+        &__search-input {
+           padding: 2rem 2rem 2rem 4rem;
+            width: 100%;
+            height: 6rem;
+            font-size: 1.8rem;
+        }
+
+        &__search-img {
+            width: 2rem;
+            height: 2.5rem;
+            top: 1.8rem;
+            left: 1rem;
+        }
+
+        &__search-button-double {
+            padding: 0;
+            height: 5.5rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    .promo-left {
+        padding: 2rem;
+        flex: 1 0 auto;
+
+        &__title {
+            font-size: 4.33rem;
+        }
+
+        &__text {
+            font-size: 4.52rem;
+        }
+
+        &__img {
+            max-width: 12.08rem;
+        }
+
+        &__decor {
+            width: 4.18rem;
+            height: 2.64rem;
+            top: -1.8rem;
+            right: -3.5rem;
+        }
+    }
+
+    .right {
+        flex: 0 0 40%;
+    }
+}
+
+@media (max-width: 600px) {}
