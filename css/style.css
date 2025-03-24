@@ -2787,3 +2787,22 @@ body {
     flex: 0 0 40%;
   }
 }
+@media (max-width: 600px) {
+  .search-info {
+    padding: 6.16rem 0;
+  }
+  .search-info__items {
+    flex-direction: column;
+  }
+  .left {
+    margin: 0 auto;
+    margin-bottom: 7.5rem;
+    width: 95%;
+  }
+  .right {
+    margin: 0 auto;
+    padding: 3rem;
+    width: 100%;
+    max-width: 90%;
+  }
+}
