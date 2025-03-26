@@ -2865,4 +2865,19 @@ body {
     max-width: 100%;
   }
 }
-/*questions*/
+/*--------------------------------------------------*/
+/*restorants-menu*/
+.top-restaurants__item_single .card-restaurants__img {
+  height: 37.8rem;
+}
+.top-restaurants__item_single .card-restaurants__category {
+  display: none;
+}
+.top-restaurants__item_single .card-restaurants__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-restaurants__item_single .card-restaurants__dop-info-card {
+  align-items: center;
+}
