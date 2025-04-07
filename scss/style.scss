@@ -3313,11 +3313,6 @@ body {
         display: flex;
         justify-content: space-between;
     }
-
-    // .search-info__item
-
-    &__item {
-    }
 }
 
 .left {
@@ -3619,13 +3614,6 @@ body {
         color: #002073;
         border: 1px solid #c5d4ff;
     }
-    
-
-    // .category-card__img
-
-    &__img {
-       
-    }
 
     // .category-card__text
 
@@ -3683,13 +3671,7 @@ body {
         font-family: "Poppins", serif;
         font-size: 2.34rem;
         line-height: 253%;
-        font-weight: 600px;
-       
-    }
-
-    // .questions__item-img
-
-    &__item-img {
+        font-weight: 600px;  
     }
 }
 
@@ -3931,6 +3913,7 @@ body {
 
 .top-restaurants_single {
     .container {
+        padding: 4rem 0;
         border-bottom: none;
         border-top: none;
     }
@@ -3945,7 +3928,7 @@ body {
   
 
     .card-restaurants__img {
-        height: 37.8rem;
+        height: 47.8rem;
     }
 
     .card-restaurants__category {

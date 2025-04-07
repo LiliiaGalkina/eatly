@@ -2422,6 +2422,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .left {
   max-width: 75.8rem;
   width: 61%;
@@ -2691,6 +2692,7 @@ body {
   line-height: 253%;
   font-weight: 600px;
 }
+
 @media (max-width: 1024px) {
   .search-info {
     padding: 8.53rem 0 6.8rem;
@@ -2877,6 +2879,7 @@ body {
 /*--------------------------------------------------*/
 /*restorants-menu*/
 .top-restaurants_single .container {
+  padding: 4rem 0;
   border-bottom: none;
   border-top: none;
 }
@@ -2889,7 +2892,7 @@ body {
   background-color: #fff;
 }
 .top-restaurants__item_single .card-restaurants__img {
-  height: 37.8rem;
+  height: 47.8rem;
 }
 .top-restaurants__item_single .card-restaurants__category {
   display: none;
