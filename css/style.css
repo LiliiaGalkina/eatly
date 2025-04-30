@@ -53,7 +53,7 @@ body {
   position: relative;
   z-index: 7;
   padding: 4.7rem 0 2.6rem;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 .header__container {
   padding-bottom: 2.6rem;
@@ -300,7 +300,7 @@ body {
   top: 50%;
   width: 38.4px;
   height: 1px;
-  color: #201F1F;
+  color: #201f1f;
 }
 .hero__title {
   margin-bottom: 1.6rem;
@@ -433,7 +433,7 @@ body {
   font-size: 1.1rem;
   line-height: 140%;
   font-weight: 500;
-  color: #ACADB9;
+  color: #acadb9;
 }
 .block-dish-mini__decor {
   position: absolute;
@@ -965,7 +965,7 @@ body {
   font-size: 1.44rem;
   line-height: 150%;
   font-weight: 500;
-  color: #C5BFED;
+  color: #c5bfed;
 }
 
 @media (max-width: 1024px) {
@@ -1070,7 +1070,7 @@ body {
 }
 .premium-quality__item {
   /* list-style: disc;
-   list-style-position: inside;*/
+      list-style-position: inside;*/
   position: relative;
   padding-left: 1.5rem;
   font-size: 2.03rem;
@@ -1234,8 +1234,8 @@ body {
 }
 .top-restaurants .container {
   padding: 10rem 0 12rem;
-  border-top: 0.1rem solid #CBCBCB;
-  border-bottom: 0.1rem solid #CBCBCB;
+  border-top: 0.1rem solid #cbcbcb;
+  border-bottom: 0.1rem solid #cbcbcb;
 }
 .top-restaurants__title {
   margin-bottom: 8.57rem;
@@ -1257,7 +1257,7 @@ body {
 }
 .top-restaurants__button p {
   margin-right: 2rem;
-  color: #ACADB9;
+  color: #acadb9;
 }
 .top-restaurants__button:hover p {
   color: #606168;
@@ -1277,7 +1277,7 @@ body {
 
 .card-restaurants {
   border-radius: 3rem;
-  border: 0.125rem solid #F4F4F6;
+  border: 0.125rem solid #f4f4f6;
   box-shadow: 0.595rem 7.135rem 3.567rem rgba(229, 229, 229, 0.7);
   transition: all 0.5s ease;
 }
@@ -1302,15 +1302,15 @@ body {
   max-width: -moz-fit-content;
   max-width: fit-content;
   border-radius: 0.54rem;
-  background-color: #F7EDD0;
+  background-color: #f7edd0;
   font-family: "Poppins", serif;
   font-size: 1.28rem;
   line-height: 150%;
-  color: #DAA31A;
+  color: #daa31a;
 }
 .card-restaurants__category_red {
-  background-color: #F7C5BA;
-  color: #FB471D;
+  background-color: #f7c5ba;
+  color: #fb471d;
 }
 .card-restaurants__title {
   margin-bottom: 0.2rem;
@@ -1327,7 +1327,7 @@ body {
   font-family: "Manrope", serif;
   font-size: 1.93rem;
   line-height: 133%;
-  color: #8E97A6;
+  color: #8e97a6;
 }
 .dop-info-card__left {
   display: flex;
@@ -1345,7 +1345,7 @@ body {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
-  background-color: #8E97A6;
+  background-color: #8e97a6;
 }
 .dop-info-card__rating {
   margin-left: 0.64rem;
@@ -1434,7 +1434,7 @@ body {
 }
 .top-dishes .container {
   padding: 10rem 0 12rem;
-  border-bottom: 0.1rem solid #CBCBCB;
+  border-bottom: 0.1rem solid #cbcbcb;
 }
 .top-dishes__title {
   margin-bottom: 7.59rem;
@@ -1482,7 +1482,7 @@ body {
 }
 .card-restaurants__category_green {
   background-color: rgba(51, 172, 100, 0.2);
-  color: #309D5B;
+  color: #309d5b;
 }
 .card-restaurants__price {
   margin-top: 1.3rem;
@@ -1500,7 +1500,7 @@ body {
 .card-restaurants__price-digit span {
   font-size: 1.88rem;
   line-height: 214%;
-  color: #8E97A6;
+  color: #8e97a6;
 }
 .card-restaurants__price-img {
   width: 3.6rem;
@@ -1654,12 +1654,12 @@ body {
   font-size: 1.2rem;
 }
 .control-purchases__card .block-dish-mini__text_red {
-  color: #F1534E;
+  color: #f1534e;
 }
 .control-purchases__item-content {
   padding: 4.55rem 3.77rem;
   width: 53.4rem;
-  border: 0.16px solid #EDF2F7;
+  border: 0.16px solid #edf2f7;
   border-radius: 2.51rem;
   box-shadow: 1px 200px 121px rgba(50, 49, 66, 0.2);
 }
@@ -1686,7 +1686,7 @@ body {
 
 .item-purchases {
   padding: 2.51rem;
-  border: 0.157rem solid #EDF2F7;
+  border: 0.157rem solid #edf2f7;
   border-radius: 1.88rem;
 }
 .item-purchases:not(:last-child) {
@@ -1716,12 +1716,12 @@ body {
   margin-bottom: 0.03rem;
   font-size: 1.88rem;
   font-weight: 800;
-  color: #1A202C;
+  color: #1a202c;
 }
 .item-purchases__percent {
   font-size: 1.57rem;
   font-weight: 500;
-  color: #A0AEC0;
+  color: #a0aec0;
 }
 .item-purchases__sum {
   justify-self: end;
@@ -1742,7 +1742,7 @@ body {
   background-color: rgba(251, 173, 24, 0.2);
 }
 .item-purchases__progress_yellow::-webkit-progress-value {
-  background-color: #FBAD18;
+  background-color: #fbad18;
 }
 
 @media (max-width: 1082px) {
@@ -1905,7 +1905,7 @@ body {
   padding: 3.8rem 4.3rem;
   max-width: 100%;
   border-radius: 2.09rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: "Poppins", serif;
 }
 .slider__item:not(:last-child) {
@@ -1958,7 +1958,7 @@ body {
   font-family: "Quicksand", serif;
   font-size: 1.67rem;
   line-height: 156%;
-  color: #5E5D5D;
+  color: #5e5d5d;
 }
 .slider__head-quote {
   justify-self: flex-end;
@@ -2092,7 +2092,7 @@ body {
 }
 .promo__container {
   position: relative;
-  background-color: #6C5FBC;
+  background-color: #6c5fbc;
   border-radius: 3rem;
   padding: 3.7rem 6.6rem 6.1rem;
 }
@@ -2102,7 +2102,7 @@ body {
   font-size: 7rem;
   line-height: 150%;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 3;
   opacity: 0.8;
 }
@@ -2146,12 +2146,12 @@ body {
   line-height: 150%;
   letter-spacing: 3%;
   text-transform: uppercase;
-  color: #F7F8FA;
+  color: #f7f8fa;
 }
 .promo__button:hover {
   box-shadow: 0 0 1rem #5c4eae;
   background-color: #5c4eae;
-  color: #F7F8FA;
+  color: #f7f8fa;
 }
 .promo__img {
   position: absolute;
@@ -2279,7 +2279,7 @@ body {
 /*FOOTER*/
 .footer {
   padding: 9.6rem 0 8.1rem;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 .footer__navigation {
   padding-bottom: 2.9rem;
@@ -2441,17 +2441,17 @@ body {
   padding: 2.13rem 2.85rem 2.13rem 7.82rem;
   width: 100%;
   height: 7.5rem;
-  background-color: #EDEDED;
+  background-color: #ededed;
   border-radius: 1.95rem;
   font-size: 2.05rem;
   line-height: 117%;
   font-weight: 500;
 }
 .left__search-input::-moz-placeholder {
-  color: #AAABBA;
+  color: #aaabba;
 }
 .left__search-input::placeholder {
-  color: #AAABBA;
+  color: #aaabba;
 }
 .left__search-img {
   width: 2.08rem;
@@ -2473,16 +2473,16 @@ body {
 .left__search-button-double {
   width: 50%;
   height: 7.5rem;
-  background-color: #F3F5F6;
-  border: 0.22rem solid #6C5FBC;
-  color: #6C5FBC;
+  background-color: #f3f5f6;
+  border: 0.22rem solid #6c5fbc;
+  color: #6c5fbc;
   font-size: 1.95rem;
   font-weight: 500;
   transition: all 0.5s ease;
 }
 .left__search-button-double:hover {
-  background-color: #6C5FBC;
-  color: #F3F5F6;
+  background-color: #6c5fbc;
+  color: #f3f5f6;
 }
 .left__search-food-button {
   border-radius: 1.51rem 0 0 1.51rem;
@@ -2498,20 +2498,20 @@ body {
   width: 100%;
   padding: 3.02rem 0 2.9rem 2.1rem;
   font-family: "Poppins", serif;
-  background-color: #6C5FBC;
+  background-color: #6c5fbc;
   border-radius: 1.87rem;
 }
 .promo-left__title {
   font-size: 7.5rem;
   line-height: 100%;
   font-weight: 800;
-  color: #F7F8FA;
+  color: #f7f8fa;
 }
 .promo-left__text {
   font-size: 8.74rem;
   line-height: 100%;
   font-weight: 800;
-  color: #7C6FCD;
+  color: #7c6fcd;
 }
 .promo-left__img {
   position: absolute;
@@ -2573,12 +2573,12 @@ body {
   font-size: 1.55rem;
   line-height: 187%;
   font-weight: 500;
-  color: #ACADB9;
+  color: #acadb9;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 .right__sort-item:hover {
-  color: #6C5FBC;
+  color: #6c5fbc;
 }
 .right__price {
   margin-bottom: 7rem;
@@ -2592,7 +2592,7 @@ body {
   overflow: hidden;
 }
 .right__price-progress::-webkit-progress-bar {
-  background-color: #6C5FBC;
+  background-color: #6c5fbc;
 }
 .right__price-circle {
   position: absolute;
@@ -2615,7 +2615,7 @@ body {
   font-size: 1.06rem;
   line-height: 281%;
   font-weight: 500;
-  color: #C2C3CB;
+  color: #c2c3cb;
 }
 .right__button {
   width: 100%;
@@ -2631,18 +2631,18 @@ body {
   box-shadow: 0 1.47rem 2.21rem rgba(135, 125, 200, 0.2509803922);
 }
 .category-card_yellow {
-  background-color: #FFDE8A;
-  color: #D69900;
-  border: 1px solid #FFDE8A;
+  background-color: #ffde8a;
+  color: #d69900;
+  border: 1px solid #ffde8a;
 }
 .category-card_red {
   background-color: rgba(251, 71, 29, 0.5019607843);
-  color: #FB471D;
+  color: #fb471d;
   border: 1px solid rgba(251, 71, 29, 0.5019607843);
 }
 .category-card_orange {
   background-color: #f9e5cb;
-  color: #E28B14;
+  color: #e28b14;
   border: 1px solid #f9e5cb;
 }
 .category-card_blue {
@@ -2681,7 +2681,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.11rem solid #ADADAD;
+  border-bottom: 0.11rem solid #adadad;
 }
 .questions__item:not(:last-child) {
   margin-bottom: 2.87rem;
@@ -2989,4 +2989,122 @@ body {
 
 .top-dishes__items_first {
   margin-bottom: 10.33rem;
+}
+
+/*Blog-------------------------------------------*/
+.blog {
+  background-color: #f9f9f9;
+}
+
+/*Articles*/
+.articles__title {
+  margin-bottom: 7.5rem;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.articles__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 34.88rem));
+  -moz-column-gap: 6.17rem;
+       column-gap: 6.17rem;
+  row-gap: 11.52rem;
+  justify-content: center;
+}
+
+.card-articles {
+  max-width: 34.88rem;
+  padding: 2.5rem 2rem 3rem;
+  background-color: #ffffff;
+  border-radius: 1.59rem;
+  box-shadow: 0 0.39rem 4.69rem rgba(197, 197, 197, 0.2509803922);
+  transition: all 0.5s ease;
+}
+.card-articles:hover {
+  border: 0.1rem solid #c5c5c5;
+}
+.card-articles__img {
+  margin-bottom: 2.16rem;
+}
+.card-articles__img img {
+  width: 100%;
+}
+.card-articles__title {
+  margin-bottom: 2.05rem;
+  font-size: 2.11rem;
+}
+.card-articles__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-articles__person {
+  display: flex;
+  align-items: center;
+}
+.card-articles__person-img {
+  margin-right: 1.15rem;
+  width: 4.37rem;
+  height: 4.37rem;
+}
+.card-articles__person-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-articles__person-autor-text {
+  font-size: 1.18rem;
+  color: #8d8d8d;
+}
+.card-articles__person-autor-name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #000000;
+}
+.card-articles__date {
+  font-size: 1.59rem;
+  font-weight: 500;
+  color: #b7b4b4;
+}
+
+@media (max-width: 1200px) {
+  .articles__title {
+    margin-bottom: 5.73rem;
+    font-size: 3.2rem;
+  }
+  .articles__items {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 24.8rem));
+    -moz-column-gap: 4.39rem;
+         column-gap: 4.39rem;
+    row-gap: 8.19rem;
+  }
+  .card-articles {
+    padding: 1.8rem 1.35rem 2.18rem;
+  }
+  .card-articles__img {
+    margin-bottom: 1.53rem;
+  }
+  .card-articles__title {
+    font-size: 1.5rem;
+  }
+  .card-articles__person-img {
+    margin-right: 0.81rem;
+    width: 3.11rem;
+    height: 3.11rem;
+  }
+  .card-articles__person-autor-tex {
+    font-size: 0.84rem;
+  }
+  .card-articles__person-autor-name {
+    font-size: 1.2rem;
+  }
+  .card-articles__date {
+    font-size: 1.13rem;
+  }
+}
+@media (max-width: 570px) {
+  .articles__items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
