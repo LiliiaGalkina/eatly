@@ -3116,6 +3116,16 @@ body {
 .article__autor {
   margin-bottom: 6.15rem;
 }
+.article__autor .card-articles__person-img {
+  width: 5.78rem;
+  height: 5.78rem;
+}
+.article__autor .card-articles__person-autor-text {
+  font-size: 1.5rem;
+}
+.article__autor .card-articles__person-autor-name {
+  font-size: 2.18rem;
+}
 .article__img-big {
   margin-bottom: 8rem;
   width: 100%;
@@ -3143,6 +3153,7 @@ body {
 
 .article-text {
   padding-right: 7.5rem;
+  border-right: 0.1rem solid #9B9B9B;
 }
 .article-text__title {
   margin-bottom: 3.5rem;
@@ -3176,6 +3187,105 @@ body {
   font-size: 2.03rem;
 }
 
+.aticle-images {
+  padding-left: 4.67rem;
+}
 .aticle-images__card:not(:last-child) {
   margin-bottom: 2.26rem;
+}
+
+@media (max-width: 1024px) {
+  .article {
+    padding: 8.96rem 0 11.95rem;
+  }
+  .article__title {
+    margin-bottom: 2.28rem;
+    font-size: 2.66rem;
+  }
+  .article__autor {
+    margin-bottom: 4.39rem;
+  }
+  .article__autor .card-articles__person-img {
+    width: 3.97rem;
+    height: 3.97rem;
+  }
+  .article__autor .card-articles__person-autor-text {
+    font-size: 1.1rem;
+  }
+  .article__autor .card-articles__person-autor-name {
+    font-size: 1.37rem;
+  }
+  .article__img-big {
+    margin-bottom: 5.69rem;
+    height: 28.66rem;
+  }
+  .article-text {
+    padding-right: 5.34rem;
+  }
+  .article-text__title {
+    margin-bottom: 2.49rem;
+    font-size: 2.35rem;
+  }
+  .article-text__title:not(:first-child) {
+    margin-top: 7.11rem;
+  }
+  .article-text__text {
+    font-size: 1.56rem;
+  }
+  .article-text__text ul {
+    margin-top: 3.94rem;
+  }
+  .article-text__button {
+    max-width: 17.42rem;
+  }
+  .article-text__button-text {
+    margin-right: 1.93rem;
+    font-size: 1.44rem;
+  }
+  .article-text__button-img {
+    width: 2.17rem;
+    height: auto;
+  }
+  .article-text__button-img img {
+    width: 100%;
+  }
+  .aticle-images {
+    padding-left: 2.32rem;
+  }
+}
+@media (max-width: 860px) {
+  .article {
+    padding: 6.9rem 0 9.53rem;
+  }
+  .article__item:first-child {
+    max-width: 100%;
+  }
+  .aticle-images {
+    display: none;
+  }
+  .article-text {
+    padding-right: 0;
+    border-right: none;
+    text-align: justify;
+  }
+}
+@media (max-width: 375px) {
+  .article__title {
+    font-size: 2.24rem;
+  }
+  .article-text__title {
+    font-size: 1.74rem;
+  }
+  .article-text__text {
+    font-size: 1.16rem;
+  }
+  .article-text__button {
+    margin-top: 5.5rem;
+    max-width: 13.7rem;
+    padding: 1.8rem;
+  }
+  .article-text__button-text {
+    margin-right: 1.12rem;
+    font-size: 1.14rem;
+  }
 }

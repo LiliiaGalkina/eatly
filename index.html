@@ -1,531 +1,974 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eatly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container container">
-                <div class="header__navigation">
-                    <a class="header__logo logo" href="index.html">
-                        <div class="logo__img"><img src="img/home/logo.png" alt="logo"></div>
-                        <div class="logo__text">eatly</div>
-                    </a>
-                    <nav class="header__menu menu">
-                        <div id="burger" class="menu__burger"><span></span></div>
-                        <ul id="menu" class="menu__list">
-                            <li class="menu__item"><a href="menu.html" class="menu__link">Menu</a></li>
-                            <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-                        </ul>
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__navigation">
+            <a class="header__logo logo" href="index.html">
+              <div class="logo__img">
+                <img src="img/home/logo.png" alt="logo" />
+              </div>
+              <div class="logo__text">eatly</div>
+            </a>
+            <nav class="header__menu menu">
+              <div id="burger" class="menu__burger"><span></span></div>
+              <ul id="menu" class="menu__list">
+                <li class="menu__item">
+                  <a href="menu.html" class="menu__link">Menu</a>
+                </li>
+                <li class="menu__item">
+                  <a href="blog.html" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Pricing</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__buttons">
+            <a href="#" class="header__link">Login</a>
+            <button class="header__button button">Sign up</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <section class="hero">
+            <div class="hero__items">
+              <div class="hero__content">
+                <div class="hero__headline">OVER 1000 USERS</div>
+                <h1 class="hero__title title">
+                  Enjoy Foods All Over The
+                  <span class="title_violet">World</span>
+                </h1>
+                <div class="hero__text">
+                  EatLy help you set saving goals, earn cash back offers, Go to
+                  disclaimer for more details and get paychecks up to two days
+                  early. Get a <span class="hero__text_violet">$20 bonus.</span>
+                </div>
+                <div class="hero__buttons">
+                  <button class="hero__button button">Get Started</button>
+                  <button class="hero__button button button_white">
+                    Go Pro
+                  </button>
+                </div>
+                <div class="hero__stars">
+                  <div class="hero__stars-green">
+                    <div class="hero__stars-green-img">
+                      <img
+                        src="img/home/star-green.png"
+                        alt="зеленая звездочка"
+                      />
+                    </div>
+                    <div class="hero__stars-green-text">
+                      <img src="img/home/trustpilot.png" alt="trustpilot" />
+                    </div>
+                  </div>
+                  <div class="hero__stars-gold stars-gold">
+                    <div class="stars-gold__star">
+                      <img src="img/home/star.png" alt="золотая звездочка" />
+                    </div>
+                    <div class="stars-gold__star">
+                      <img src="img/home/star.png" alt="золотая звездочка" />
+                    </div>
+                    <div class="stars-gold__star">
+                      <img src="img/home/star.png" alt="золотая звездочка" />
+                    </div>
+                    <div class="stars-gold__star">
+                      <img src="img/home/star.png" alt="золотая звездочка" />
+                    </div>
+                    <div class="stars-gold__star">
+                      <img src="img/home/star.png" alt="золотая звездочка" />
+                    </div>
+                  </div>
+                  <div class="hero__stars-text">4900+</div>
+                </div>
+              </div>
+              <div class="hero__imges">
+                <div class="hero__imges-img">
+                  <img
+                    class="hero__images-img-main"
+                    src="img/home/food-hero.png"
+                    alt="блюдо с едой"
+                  />
+                  <img
+                    class="hero__images-img-oval"
+                    src="img/home/Ellipse.png"
+                    alt="фиолетовый круг"
+                  />
+                  <div class="hero__imges-img-decor">
+                    <img
+                      src="img/home/arrow-hero.png"
+                      alt="декоративная фиолетовая стрелка"
+                    />
+                  </div>
+                  <div class="hero__imges-dish block-dish-mini">
+                    <div class="block-dish-mini__img">
+                      <img
+                        src="img/home/food-hero-mini.jpg"
+                        alt="блюдо с едой"
+                      />
+                    </div>
+                    <div class="block-dish-mini__body">
+                      <h4 class="block-dish-mini__title">Chicken Hell</h4>
+                      <div class="block-dish-mini__text">On The Way</div>
+                    </div>
+                    <div class="block-dish-mini__time">3:09 PM</div>
+                    <div class="block-dish-mini__decor">
+                      <img
+                        src="img/home/decor-hero-up.png"
+                        alt="три декоративные синие полоски"
+                      />
+                    </div>
+                  </div>
+                  <div class="hero__graf graf">
+                    <nav class="graf__menu">
+                      <ul class="graf__list">
+                        <li class="graf__item">
+                          <a href="#" class="graf__link">Main</a>
+                        </li>
+                        <li class="graf__item">
+                          <a href="#" class="graf__link">Weekly</a>
+                        </li>
+                        <li class="graf__item">
+                          <a href="#" class="graf__link">Montly</a>
+                        </li>
+                        <li class="graf__item">
+                          <a href="#" class="graf__link">Yearly</a>
+                        </li>
+                      </ul>
                     </nav>
+                    <div class="graf__img">
+                      <img src="img/home/graph.png" alt="график" />
+                    </div>
+                    <div class="graf__digits">
+                      <a href="#" class="graf__digit">2D</a>
+                      <a href="#" class="graf__digit">4D</a>
+                      <a href="#" class="graf__digit">5D</a>
+                      <a href="#" class="graf__digit">6D</a>
+                      <a href="#" class="graf__digit">7D</a>
+                    </div>
+                    <div class="graf__decor">
+                      <img
+                        src="img/home/decor-hero-down.png"
+                        alt="три декоративные синие полоски"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="header__buttons">
-                    <a href="#" class="header__link">Login</a>
-                    <button class="header__button button">Sign up</button>
-                </div>
+              </div>
             </div>
-        </header>
-        <main class="main">
-            <div class="container">
-                <section class="hero">
-                    <div class="hero__items">
-                                <div class="hero__content">
-                                    <div class="hero__headline">OVER 1000 USERS</div>
-                                    <h1 class="hero__title title">Enjoy Foods All Over The <span class="title_violet">World</span></h1>
-                                    <div class="hero__text">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="hero__text_violet">$20 bonus.</span></div>
-                                    <div class="hero__buttons">
-                                        <button class="hero__button button">Get Started</button>
-                                        <button class="hero__button button button_white">Go Pro</button>
-                                    </div>
-                                    <div class="hero__stars">
-                                        <div class="hero__stars-green">
-                                            <div class="hero__stars-green-img"><img src="img/home/star-green.png" alt="зеленая звездочка"></div>
-                                            <div class="hero__stars-green-text"><img src="img/home/trustpilot.png" alt="trustpilot"></div>
-                                        </div>
-                                        <div class="hero__stars-gold stars-gold">
-                                            <div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звездочка"></div>
-                                            <div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звездочка"></div>
-                                            <div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звездочка"></div>
-                                            <div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звездочка"></div>
-                                            <div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звездочка"></div>
-                                        </div>
-                                        <div class="hero__stars-text">4900+</div>
-                                    </div>
-                                </div>
-                                <div class="hero__imges">
-                                    <div class="hero__imges-img">
-                                        <img class="hero__images-img-main" src="img/home/food-hero.png" alt="блюдо с едой">
-                                        <img class="hero__images-img-oval" src="img/home/Ellipse.png" alt="фиолетовый круг">
-                                        <div class="hero__imges-img-decor"><img src="img/home/arrow-hero.png" alt="декоративная фиолетовая стрелка"></div>
-                                        <div class="hero__imges-dish block-dish-mini">
-                                            <div class="block-dish-mini__img"><img src="img/home/food-hero-mini.jpg" alt="блюдо с едой"></div>
-                                            <div class="block-dish-mini__body">
-                                                <h4 class="block-dish-mini__title">Chicken Hell</h4>
-                                                <div class="block-dish-mini__text">On The Way</div>
-                                            </div>
-                                            <div class="block-dish-mini__time">3:09 PM</div>
-                                            <div class="block-dish-mini__decor"><img src="img/home/decor-hero-up.png" alt="три декоративные синие полоски"></div>
-                                        </div>
-                                        <div class="hero__graf graf">
-                                            <nav class="graf__menu">
-                                                <ul class="graf__list">
-                                                    <li class="graf__item"><a href="#" class="graf__link">Main</a></li>
-                                                    <li class="graf__item"><a href="#" class="graf__link">Weekly</a></li>
-                                                    <li class="graf__item"><a href="#" class="graf__link">Montly</a></li>
-                                                    <li class="graf__item"><a href="#" class="graf__link">Yearly</a></li>
-                                                </ul>
-                                            </nav>
-                                            <div class="graf__img"><img src="img/home/graph.png" alt="график"></div>
-                                            <div class="graf__digits">
-                                                <a href="#" class="graf__digit">2D</a>
-                                                <a href="#" class="graf__digit">4D</a>
-                                                <a href="#" class="graf__digit">5D</a>
-                                                <a href="#" class="graf__digit">6D</a>
-                                                <a href="#" class="graf__digit">7D</a>
-                                            </div>
-                                            <div class="graf__decor"><img src="img/home/decor-hero-down.png" alt="три декоративные синие полоски"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                    </div>
-                </section>      
+          </section>
+        </div>
+        <div class="achievements">
+          <div class="container">
+            <div class="achievements__items">
+              <div class="achievements__item">
+                <div class="achievements__digit">10K+</div>
+                <div class="achievements__text">
+                  Satisfied Costumers All Great Over The World
+                </div>
+              </div>
+              <div class="achievements__item">
+                <div class="achievements__digit">4M</div>
+                <div class="achievements__text">
+                  Healthy Dishes SoldIncluding Milk Shakes Smooth
+                </div>
+              </div>
+              <div class="achievements__item">
+                <div class="achievements__digit">99.99%</div>
+                <div class="achievements__text">
+                  Reliable Customer SupportWe Provide Great Experiences
+                </div>
+              </div>
             </div>
-            <div class="achievements">
-                <div class="container">
-                    <div class="achievements__items">
-                        <div class="achievements__item">
-                            <div class="achievements__digit">10K+</div>
-                            <div class="achievements__text">Satisfied Costumers
-                                All Great Over The World </div>
-                        </div>
-                        <div class="achievements__item">
-                            <div class="achievements__digit">4M</div>
-                            <div class="achievements__text">Healthy Dishes SoldIncluding Milk Shakes Smooth</div>
-                        </div>
-                        <div class="achievements__item">
-                            <div class="achievements__digit">99.99%</div>
-                            <div class="achievements__text">Reliable Customer SupportWe Provide Great Experiences</div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <section class="premium-quality">
+          <div class="container">
+            <div class="premium-quality__items">
+              <div class="premium-quality__image">
+                <div class="premium-quality__image-phone">
+                  <img src="img/home/mobile-screen.jpg" alt="mobile phone" />
+                  <div class="premium-quality__phone-decor">
+                    <img
+                      src="img/home/mobile-decor-up.png"
+                      alt="три декоративные синие полоски"
+                    />
+                  </div>
                 </div>
+              </div>
+              <div class="premium-quality__content">
+                <h2 class="premium-quality__title title">
+                  Premium <span class="title_violet">Quality</span> For Your
+                  Health
+                </h2>
+                <ul class="premium-quality__list">
+                  <li class="premium-quality__item">
+                    Premium quality food is made with ingredients that are
+                    packed with essential vitamins, minerals.
+                  </li>
+                  <li class="premium-quality__item">
+                    These foods promote overall wellness by support healthy
+                    digestion and boosting immunity
+                  </li>
+                </ul>
+                <div class="premium-quality__nav">
+                  <a href="#" class="premium-quality__button button"
+                    >Download</a
+                  >
+                  <div class="premium-quality__arrow-decor">
+                    <img
+                      src="img/home/mobile-arrow.png"
+                      alt="декоративная фиолетовая стрелка"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <section class="premium-quality">
-                <div class="container">
-                    <div class="premium-quality__items">
-                        <div class="premium-quality__image">
-                            <div class="premium-quality__image-phone">
-                                <img src="img/home/mobile-screen.jpg" alt="mobile phone">
-                                <div class="premium-quality__phone-decor"><img src="img/home/mobile-decor-up.png" alt="три декоративные синие полоски"></div>
-                            </div>
-                        </div>
-                        <div class="premium-quality__content">
-                            <h2 class="premium-quality__title title">Premium <span class="title_violet">Quality</span> For Your Health</h2>
-                            <ul class="premium-quality__list">
-                                <li class="premium-quality__item">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</li>
-                                <li class="premium-quality__item">These foods promote overall wellness by support healthy digestion and boosting immunity</li>
-                            </ul>
-                            <div class="premium-quality__nav">
-                                <a href="#" class="premium-quality__button button">Download</a>
-                                <div class="premium-quality__arrow-decor"><img src="img/home/mobile-arrow.png" alt="декоративная фиолетовая стрелка"></div>
-                            </div>
-                        </div>
+          </div>
+        </section>
+        <section class="top-restaurants">
+          <div class="container">
+            <h2 class="top-restaurants__title title">
+              Our Top <span class="title_violet">Restaurants</span>
+            </h2>
+            <div class="top-restaurants__items">
+              <a href="#" class="top-restaurants__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/restaurants/resturent-image1.jpg"
+                    alt="приготовленная курица с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">The Chicken King</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
                     </div>
-                </div>
-            </section>
-            <section class="top-restaurants">
-                <div class="container">
-                    <h2 class="top-restaurants__title title">Our Top <span class="title_violet">Restaurants</span></h2>
-                    <div class="top-restaurants__items">
-                        <a href="#" class="top-restaurants__item card-restaurants">
-                            <div class="card-restaurants__img"><img src="img/home/restaurants/resturent-image1.jpg" alt="приготовленная курица с зеленью"></div>
-                            <div class="card-restaurants__content">
-                                <div class="card-restaurants__category">Healthy</div>
-                                <h3 class="card-restaurants__title">The Chicken King</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.8</div>
-                                    </div>
-                                    <div class="dop-info-card__right"><img src="img/home/restaurants/Bookmark.png" alt="фиолетовая закладка"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="top-restaurants__item card-restaurants">
-                            <div class="card-restaurants__img"><img src="img/home/restaurants/resturent-image2.jpg" alt="разрезанный бургер"></div>
-                            <div class="card-restaurants__content">
-                                <div class="card-restaurants__category card-restaurants__category_red">Trending</div>
-                                <h3 class="card-restaurants__title">The Burger King</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.9</div>
-                                    </div>
-                                    <div class="dop-info-card__right"><img src="img/home/restaurants/Bookmark.png" alt="фиолетовая закладка"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="top-restaurants__item card-restaurants">
-                            <div class="card-restaurants__img"><img src="img/home/restaurants/resturent-image3.jpg" alt="приготовленная курица с зеленью"></div>
-                            <div class="card-restaurants__content">
-                                <div class="card-restaurants__category">Healthy</div>
-                                <h3 class="card-restaurants__title">The Chicken King</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.8</div>
-                                    </div>
-                                    <div class="dop-info-card__right"><img src="img/home/restaurants/Bookmark.png" alt="фиолетовая закладка"></div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="dop-info-card__right">
+                      <img
+                        src="img/home/restaurants/Bookmark.png"
+                        alt="фиолетовая закладка"
+                      />
                     </div>
-                    <a href="#" class="top-restaurants__button">
-                        <p>View All</p>
-                        <div class="top-restaurants__arrow">
-                            <span></span>
-                            <img src="img/home/restaurants/arrow.png" alt="стрелка вправо">
-                        </div>
-                    </a>
+                  </div>
                 </div>
-            </section>
-			<section class="top-dishes">
-					<div class="container">
-						<h2 class="top-dishes__title title">Our Top <span class="title_violet">Dishes</span> </h2>
-						<div class="top-dishes__items">
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food1.png" alt="блюдо с курицей с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                                <div class="card-restaurants__content">
-                                <div class="card-restaurants__category">Healthy</div>
-                                <h3 class="card-restaurants__title">Chicken Hell</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.8</div>
-                                    </div>
-                                </div>
-                                <div class="card-restaurants__price">
-                                    <div class="card-restaurants__price-digit">$12<span>.99</span></div>
-                                    <div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-                                        </div>
-                                </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food2.png" alt="блюдо с мясом с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category card-restaurants__category_red">Trending</div>
-                           <h3 class="card-restaurants__title">Swe Dish</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">34min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.9</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$19<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food3.png" alt="блюдо с рыбой с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category card-restaurants__category_green">Supreme</div>
-                           <h3 class="card-restaurants__title">Swe Dish</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">34min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.9</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$19<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food4.png" alt="блюдо с рыбой с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category">Healthy</div>
-                           <h3 class="card-restaurants__title">Chicken Hell</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">24min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.8</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$12<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food5.png" alt="блюдо с мясом с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category card-restaurants__category_red">Trending</div>
-                           <h3 class="card-restaurants__title">Swe Dish</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">34min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.9</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$19<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-						</div>
-						<a href="#" class="top-restaurants__button">
-                        <p>View All</p>
-                        <div class="top-restaurants__arrow">
-                            <span></span>
-                            <img src="img/home/restaurants/arrow.png" alt="стрелка вправо">
-                        </div>
-                    </a>
-					</div>
-			</section>
-            <section class="control-purchases">
-                <div class="container">
-                    <div class="control-purchases__items">
-                        <div class="control-purchases__item">
-                            <h2 class="control-purchases__title title">Control <span class="title_violet">Purchases</span> Via Dashboard</h2>
-                            <div class="control-purchases__cards">
-                                <div class="control-purchases__card block-dish-mini">
-                                    <div class="block-dish-mini__img"><img src="img/home/food-hero-mini.jpg" alt="блюдо с едой"></div>
-                                    <div class="block-dish-mini__body">
-                                        <h4 class="block-dish-mini__title">Chicken Hell</h4>
-                                        <div class="block-dish-mini__text">On The Way</div>
-                                    </div>
-                                    <div class="block-dish-mini__time">3:09 PM</div>
-                                </div>
-                                <div class="control-purchases__card block-dish-mini">
-                                    <div class="block-dish-mini__img"><img src="img/home/control/food2.png" alt="блюдо с едой"></div>
-                                    <div class="block-dish-mini__body">
-                                        <h4 class="block-dish-mini__title">Swe Dish</h4>
-                                        <div class="block-dish-mini__text">Swe Dish</div>
-                                    </div>
-                                    <div class="block-dish-mini__time">Yesterday</div>
-                                </div>
-                                <div class="control-purchases__card block-dish-mini">
-                                    <div class="block-dish-mini__img"><img src="img/home/control/food3.png" alt="блюдо с едой"></div>
-                                    <div class="block-dish-mini__body">
-                                        <h4 class="block-dish-mini__title">Fish Hell Veg</h4>
-                                        <div class="block-dish-mini__text block-dish-mini__text_red">Cancelled</div>
-                                    </div>
-                                    <div class="block-dish-mini__time">Yesterday</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control-purchases__item">
-                            <div class="control-purchases__item-content">
-                                <div class="control-purchases__item-titles">
-                                    <h3 class="control-purchases__item-title">Purchases</h3>
-                                    <select name="month" id="month" class="control-purchases__select">
-                                        <option value="thisMonth">This month</option>
-                                        <option value="january">January</option>
-                                        <option value="february">February</option>
-                                        <option value="march">March</option>
-                                        <option value="april">April</option>
-                                        <option value="may">May</option>
-                                        <option value="june">June</option>
-                                        <option value="july">July</option>
-                                        <option value="august">August</option>
-                                        <option value="september">September</option>
-                                        <option value="oktober">Oktober</option>
-                                        <option value="november">November</option>
-                                        <option value="december">December</option>      
-                                    </select>
-                                </div>
-                                <div class="control-purchases__purchases-items">
-                                    <div class="control-purchases__purchases-item item-purchases">
-                                        <div class="item-purchases__content">
-                                            <div class="item-purchases__body">
-                                                <div class="item-purchases__img"><img src="./img/home/control/icon1.svg" alt="иконка кошелька"></div>
-                                                <div class="item-purchases__info">
-                                                    <h4 class="item-purchases__subtitle">Expense</h4>
-                                                    <div class="item-purchases__percent">Increased By 10%</div>
-                                                </div>
-                                            </div>
-                                            <div class="item-purchases__sum">$409.00</div>
-                                        </div>
-                                        <progress class="item-purchases__progress" value="80" max="100"></progress>
-                                    </div>
-                                    <div class="control-purchases__purchases-item item-purchases">
-                                        <div class="item-purchases__content">
-                                            <div class="item-purchases__body">
-                                                <div class="item-purchases__img"><img src="./img/home/control/icon2.svg" alt="иконка денежной купюры"></div>
-                                                <div class="item-purchases__info">
-                                                    <h4 class="item-purchases__subtitle">Vocher Usage</h4>
-                                                    <div class="item-purchases__percent">Increased By 5%</div>
-                                                </div>
-                                            </div>    
-                                            <div class="item-purchases__sum">$45.78</div>
-                                        </div>
-                                        <progress class="item-purchases__progress item-purchases__progress_yellow" value="70" max="100"></progress>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              </a>
+              <a href="#" class="top-restaurants__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/restaurants/resturent-image2.jpg"
+                    alt="разрезанный бургер"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_red"
+                  >
+                    Trending
+                  </div>
+                  <h3 class="card-restaurants__title">The Burger King</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
                     </div>
-                </div>
-            </section>
-			<section class="feedback">
-					<div class="container">
-						<h2 class="feedback__title title"><span class="title_violet">Customer</span> Say</h2>
-						<div class="feedback__slider slider">
-							<div class="slider__item">
-								<div class="slider__head">
-									<div class="slider__head-body">
-										<div class="slider__head-img"><img src="img/home/Alexander.jpg" alt="фото автора отзыва"></div>
-										<div class="slider__head-info">
-											<div class="slider__head-name">Alexander R.</div>
-											<div class="slider__head-date">01 Year With Us </div>
-										</div>
-									</div>
-								<div class="slider__head-quote"><img src="img/home/quote.png" alt="большая кавычка"></div>
-								</div>
-								<div class="slider__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</div>
-								<div class="slider__stars stars-gold">
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-								</div>
-							</div>
-							<div class="slider__item">
-								<div class="slider__head">
-									<div class="slider__head-body">
-										<div class="slider__head-img"><img src="img/home/Alexander.jpg" alt="фото автора отзыва"></div>
-										<div class="slider__head-info">
-											<div class="slider__head-name">Alexander R.</div>
-											<div class="slider__head-date">01 Year With Us </div>
-										</div>
-									</div>
-								<div class="slider__head-quote"><img src="img/home/quote.png" alt="большая кавычка"></div>
-								</div>
-								<div class="slider__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</div>
-								<div class="slider__stars stars-gold">
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-								</div>
-							</div>
-							<div class="slider__item">
-								<div class="slider__head">
-									<div class="slider__head-body">
-										<div class="slider__head-img"><img src="img/home/Alexander.jpg" alt="фото автора отзыва"></div>
-										<div class="slider__head-info">
-											<div class="slider__head-name">Alexander R.</div>
-											<div class="slider__head-date">01 Year With Us </div>
-										</div>
-									</div>
-								<div class="slider__head-quote"><img src="img/home/quote.png" alt="большая кавычка"></div>
-								</div>
-								<div class="slider__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</div>
-								<div class="slider__stars stars-gold">
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-								</div>
-							</div>
-							<div class="slider__item">
-								<div class="slider__head">
-									<div class="slider__head-body">
-										<div class="slider__head-img"><img src="img/home/Alexander.jpg" alt="фото автора отзыва"></div>
-										<div class="slider__head-info">
-											<div class="slider__head-name">Alexander R.</div>
-											<div class="slider__head-date">01 Year With Us </div>
-										</div>
-									</div>
-								<div class="slider__head-quote"><img src="img/home/quote.png" alt="большая кавычка"></div>
-								</div>
-								<div class="slider__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</div>
-								<div class="slider__stars stars-gold">
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-									<div class="stars-gold__star"><img src="img/home/star.png" alt="золотая звезда"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>
-			<section class="promo">
-					<div class="promo__container container">
-						<h2 class="promo__title">GET 50%</h2>
-						<form action="#" class="promo__form">
-							<input type="email" class="promo__email" placeholder=" Enter Your Email Address">
-							<button type="submit" class="promo__button button">subscribe</button>
-						</form>
-						<div class="promo__img"><img src="img/home/get50.png" alt="приготовленное мясо с зеленью на тарелке"></div>
-						<div class="promo__decor-right"><img src="img/home/promo-right.png" alt="декор"></div>
-						<div class="promo__decir-left"><img src="img/home/ptomo-left.png" alt="декор"></div>
-					</div>
-			</section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__navigation">
-                    <a class="footer__logo logo" href="home">
-                        <div class="logo__img"><img src="img/home/logo.png" alt="logo"></div>
-                        <div class="logo__text">eatly</div>
-                    </a>
-                    <nav class="footer__menu">
-                        <ul class="footer__menu-list">
-                            <li class="footer__menu-item"><a href="menu.html" class="footer__menu-link">Menu</a></li>
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Blog</a></li>
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Pricing</a></li>
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__info">
-                    <div class="footer__copyright">© 2023 EATLY All Rights Reserved.</div>
-                    <div class="footer__social social">
-                        <a href="#" class="social__item"><img src="img/home/social/insta.svg" alt="instagram"></a>
-                        <a href="#" class="social__item"><img src="img/home/social/fb.svg" alt="instagram"></a>
-                        <a href="#" class="social__item"><img src="img/home/social/twiter.svg" alt="facebook"></a>
-                        <a href="#" class="social__item"><img src="img/home/social/in.svg" alt="twiter"></a>
+                    <div class="dop-info-card__right">
+                      <img
+                        src="img/home/restaurants/Bookmark.png"
+                        alt="фиолетовая закладка"
+                      />
                     </div>
+                  </div>
                 </div>
+              </a>
+              <a href="#" class="top-restaurants__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/restaurants/resturent-image3.jpg"
+                    alt="приготовленная курица с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">The Chicken King</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                    <div class="dop-info-card__right">
+                      <img
+                        src="img/home/restaurants/Bookmark.png"
+                        alt="фиолетовая закладка"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-        </footer>
+            <a href="#" class="top-restaurants__button">
+              <p>View All</p>
+              <div class="top-restaurants__arrow">
+                <span></span>
+                <img
+                  src="img/home/restaurants/arrow.png"
+                  alt="стрелка вправо"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="top-dishes">
+          <div class="container">
+            <h2 class="top-dishes__title title">
+              Our Top <span class="title_violet">Dishes</span>
+            </h2>
+            <div class="top-dishes__items">
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food1.png"
+                    alt="блюдо с курицей с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">Chicken Hell</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $12<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food2.png"
+                    alt="блюдо с мясом с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_red"
+                  >
+                    Trending
+                  </div>
+                  <h3 class="card-restaurants__title">Swe Dish</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">34min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $19<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food3.png"
+                    alt="блюдо с рыбой с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_green"
+                  >
+                    Supreme
+                  </div>
+                  <h3 class="card-restaurants__title">Swe Dish</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">34min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $19<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food4.png"
+                    alt="блюдо с рыбой с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">Chicken Hell</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $12<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food5.png"
+                    alt="блюдо с мясом с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_red"
+                  >
+                    Trending
+                  </div>
+                  <h3 class="card-restaurants__title">Swe Dish</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">34min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $19<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="top-restaurants__button">
+              <p>View All</p>
+              <div class="top-restaurants__arrow">
+                <span></span>
+                <img
+                  src="img/home/restaurants/arrow.png"
+                  alt="стрелка вправо"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="control-purchases">
+          <div class="container">
+            <div class="control-purchases__items">
+              <div class="control-purchases__item">
+                <h2 class="control-purchases__title title">
+                  Control <span class="title_violet">Purchases</span> Via
+                  Dashboard
+                </h2>
+                <div class="control-purchases__cards">
+                  <div class="control-purchases__card block-dish-mini">
+                    <div class="block-dish-mini__img">
+                      <img
+                        src="img/home/food-hero-mini.jpg"
+                        alt="блюдо с едой"
+                      />
+                    </div>
+                    <div class="block-dish-mini__body">
+                      <h4 class="block-dish-mini__title">Chicken Hell</h4>
+                      <div class="block-dish-mini__text">On The Way</div>
+                    </div>
+                    <div class="block-dish-mini__time">3:09 PM</div>
+                  </div>
+                  <div class="control-purchases__card block-dish-mini">
+                    <div class="block-dish-mini__img">
+                      <img
+                        src="img/home/control/food2.png"
+                        alt="блюдо с едой"
+                      />
+                    </div>
+                    <div class="block-dish-mini__body">
+                      <h4 class="block-dish-mini__title">Swe Dish</h4>
+                      <div class="block-dish-mini__text">Swe Dish</div>
+                    </div>
+                    <div class="block-dish-mini__time">Yesterday</div>
+                  </div>
+                  <div class="control-purchases__card block-dish-mini">
+                    <div class="block-dish-mini__img">
+                      <img
+                        src="img/home/control/food3.png"
+                        alt="блюдо с едой"
+                      />
+                    </div>
+                    <div class="block-dish-mini__body">
+                      <h4 class="block-dish-mini__title">Fish Hell Veg</h4>
+                      <div
+                        class="block-dish-mini__text block-dish-mini__text_red"
+                      >
+                        Cancelled
+                      </div>
+                    </div>
+                    <div class="block-dish-mini__time">Yesterday</div>
+                  </div>
+                </div>
+              </div>
+              <div class="control-purchases__item">
+                <div class="control-purchases__item-content">
+                  <div class="control-purchases__item-titles">
+                    <h3 class="control-purchases__item-title">Purchases</h3>
+                    <select
+                      name="month"
+                      id="month"
+                      class="control-purchases__select"
+                    >
+                      <option value="thisMonth">This month</option>
+                      <option value="january">January</option>
+                      <option value="february">February</option>
+                      <option value="march">March</option>
+                      <option value="april">April</option>
+                      <option value="may">May</option>
+                      <option value="june">June</option>
+                      <option value="july">July</option>
+                      <option value="august">August</option>
+                      <option value="september">September</option>
+                      <option value="oktober">Oktober</option>
+                      <option value="november">November</option>
+                      <option value="december">December</option>
+                    </select>
+                  </div>
+                  <div class="control-purchases__purchases-items">
+                    <div
+                      class="control-purchases__purchases-item item-purchases"
+                    >
+                      <div class="item-purchases__content">
+                        <div class="item-purchases__body">
+                          <div class="item-purchases__img">
+                            <img
+                              src="./img/home/control/icon1.svg"
+                              alt="иконка кошелька"
+                            />
+                          </div>
+                          <div class="item-purchases__info">
+                            <h4 class="item-purchases__subtitle">Expense</h4>
+                            <div class="item-purchases__percent">
+                              Increased By 10%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-purchases__sum">$409.00</div>
+                      </div>
+                      <progress
+                        class="item-purchases__progress"
+                        value="80"
+                        max="100"
+                      ></progress>
+                    </div>
+                    <div
+                      class="control-purchases__purchases-item item-purchases"
+                    >
+                      <div class="item-purchases__content">
+                        <div class="item-purchases__body">
+                          <div class="item-purchases__img">
+                            <img
+                              src="./img/home/control/icon2.svg"
+                              alt="иконка денежной купюры"
+                            />
+                          </div>
+                          <div class="item-purchases__info">
+                            <h4 class="item-purchases__subtitle">
+                              Vocher Usage
+                            </h4>
+                            <div class="item-purchases__percent">
+                              Increased By 5%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-purchases__sum">$45.78</div>
+                      </div>
+                      <progress
+                        class="item-purchases__progress item-purchases__progress_yellow"
+                        value="70"
+                        max="100"
+                      ></progress>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <h2 class="feedback__title title">
+              <span class="title_violet">Customer</span> Say
+            </h2>
+            <div class="feedback__slider slider">
+              <div class="slider__item">
+                <div class="slider__head">
+                  <div class="slider__head-body">
+                    <div class="slider__head-img">
+                      <img
+                        src="img/home/Alexander.jpg"
+                        alt="фото автора отзыва"
+                      />
+                    </div>
+                    <div class="slider__head-info">
+                      <div class="slider__head-name">Alexander R.</div>
+                      <div class="slider__head-date">01 Year With Us</div>
+                    </div>
+                  </div>
+                  <div class="slider__head-quote">
+                    <img src="img/home/quote.png" alt="большая кавычка" />
+                  </div>
+                </div>
+                <div class="slider__text">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </div>
+                <div class="slider__stars stars-gold">
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__head">
+                  <div class="slider__head-body">
+                    <div class="slider__head-img">
+                      <img
+                        src="img/home/Alexander.jpg"
+                        alt="фото автора отзыва"
+                      />
+                    </div>
+                    <div class="slider__head-info">
+                      <div class="slider__head-name">Alexander R.</div>
+                      <div class="slider__head-date">01 Year With Us</div>
+                    </div>
+                  </div>
+                  <div class="slider__head-quote">
+                    <img src="img/home/quote.png" alt="большая кавычка" />
+                  </div>
+                </div>
+                <div class="slider__text">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </div>
+                <div class="slider__stars stars-gold">
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__head">
+                  <div class="slider__head-body">
+                    <div class="slider__head-img">
+                      <img
+                        src="img/home/Alexander.jpg"
+                        alt="фото автора отзыва"
+                      />
+                    </div>
+                    <div class="slider__head-info">
+                      <div class="slider__head-name">Alexander R.</div>
+                      <div class="slider__head-date">01 Year With Us</div>
+                    </div>
+                  </div>
+                  <div class="slider__head-quote">
+                    <img src="img/home/quote.png" alt="большая кавычка" />
+                  </div>
+                </div>
+                <div class="slider__text">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </div>
+                <div class="slider__stars stars-gold">
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__head">
+                  <div class="slider__head-body">
+                    <div class="slider__head-img">
+                      <img
+                        src="img/home/Alexander.jpg"
+                        alt="фото автора отзыва"
+                      />
+                    </div>
+                    <div class="slider__head-info">
+                      <div class="slider__head-name">Alexander R.</div>
+                      <div class="slider__head-date">01 Year With Us</div>
+                    </div>
+                  </div>
+                  <div class="slider__head-quote">
+                    <img src="img/home/quote.png" alt="большая кавычка" />
+                  </div>
+                </div>
+                <div class="slider__text">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </div>
+                <div class="slider__stars stars-gold">
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                  <div class="stars-gold__star">
+                    <img src="img/home/star.png" alt="золотая звезда" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="promo__container container">
+            <h2 class="promo__title">GET 50%</h2>
+            <form action="#" class="promo__form">
+              <input
+                type="email"
+                class="promo__email"
+                placeholder=" Enter Your Email Address"
+              />
+              <button type="submit" class="promo__button button">
+                subscribe
+              </button>
+            </form>
+            <div class="promo__img">
+              <img
+                src="img/home/get50.png"
+                alt="приготовленное мясо с зеленью на тарелке"
+              />
+            </div>
+            <div class="promo__decor-right">
+              <img src="img/home/promo-right.png" alt="декор" />
+            </div>
+            <div class="promo__decir-left">
+              <img src="img/home/ptomo-left.png" alt="декор" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__navigation">
+            <a class="footer__logo logo" href="home">
+              <div class="logo__img">
+                <img src="img/home/logo.png" alt="logo" />
+              </div>
+              <div class="logo__text">eatly</div>
+            </a>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="menu.html" class="footer__menu-link">Menu</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Blog</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Pricing</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__info">
+            <div class="footer__copyright">
+              © 2023 EATLY All Rights Reserved.
+            </div>
+            <div class="footer__social social">
+              <a href="#" class="social__item"
+                ><img src="img/home/social/insta.svg" alt="instagram"
+              /></a>
+              <a href="#" class="social__item"
+                ><img src="img/home/social/fb.svg" alt="instagram"
+              /></a>
+              <a href="#" class="social__item"
+                ><img src="img/home/social/twiter.svg" alt="facebook"
+              /></a>
+              <a href="#" class="social__item"
+                ><img src="img/home/social/in.svg" alt="twiter"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	 <script src="js/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

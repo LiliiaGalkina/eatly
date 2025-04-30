@@ -4179,6 +4179,19 @@ body {
 
   &__autor {
     margin-bottom: 6.15rem;
+
+	.card-articles__person-img {
+		width: 5.78rem;
+		height: 5.78rem;
+	}
+
+	.card-articles__person-autor-text {
+		font-size: 1.5rem;
+	}
+
+	.card-articles__person-autor-name {
+		font-size: 2.18rem;
+	}
   }
 
   // .article__img
@@ -4220,6 +4233,7 @@ body {
 
 .article-text {
   padding-right: 7.5rem;
+  border-right: 0.1rem solid #9B9B9B;
   // .article-text__title
 
   &__title {
@@ -4265,6 +4279,7 @@ body {
 }
 
 .aticle-images {
+	padding-left: 4.67rem;
   // .aticle-images__card
 
   &__card {
@@ -4272,4 +4287,129 @@ body {
       margin-bottom: 2.26rem;
     }
   }
+}
+
+@media (max-width: 1024px) {
+	.article {
+		padding: 8.96rem 0 11.95rem;
+
+		&__title {
+			margin-bottom: 2.28rem;
+			font-size: 2.66rem;
+		}
+
+		&__autor {
+			margin-bottom: 4.39rem;
+
+			.card-articles__person-img {
+				width: 3.97rem;
+				height: 3.97rem;
+			}
+
+			.card-articles__person-autor-text {
+				font-size: 1.1rem;
+			}
+
+			.card-articles__person-autor-name {
+				font-size: 1.37rem;
+			}
+		}
+
+		&__img-big {
+			margin-bottom: 5.69rem;
+			height: 28.66rem;
+		}
+	}
+
+	.article-text {
+		padding-right: 5.34rem;
+
+		&__title {
+			margin-bottom: 2.49rem;
+			font-size: 2.35rem;
+
+			&:not(:first-child){
+				margin-top: 7.11rem;
+			}
+		}
+
+		&__text {
+			font-size: 1.56rem;
+
+			ul {
+				margin-top: 3.94rem;
+			}
+		}
+
+		&__button {
+			max-width: 17.42rem;
+		}
+
+		&__button-text {
+			margin-right: 1.93rem;
+			font-size: 1.44rem;
+		}
+
+		&__button-img {
+			width: 2.17rem;
+			height: auto;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.aticle-images {
+		padding-left: 2.32rem;
+	}
+}
+
+
+@media (max-width: 860px) {
+	.article {
+		padding: 6.9rem 0 9.53rem;
+
+		&__item:first-child {
+			max-width: 100%;
+		}
+	}
+
+	.aticle-images {
+		display: none;
+	}
+
+	.article-text {
+		padding-right: 0;
+		border-right: none;
+		text-align: justify;
+	}
+}
+
+@media (max-width: 375px) {
+	.article {
+		&__title {
+			font-size: 2.24rem;
+		}
+	}
+
+	.article-text {
+		&__title {
+			font-size: 1.74rem;
+		}
+
+		&__text {
+			font-size: 1.16rem;
+		}
+
+		&__button {
+			margin-top: 5.5rem;
+			max-width: 13.7rem;
+			padding: 1.8rem;
+		}
+
+		&__button-text {
+			margin-right: 1.12rem;
+			font-size: 1.14rem;
+		}
+	}
 }
