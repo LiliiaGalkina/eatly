@@ -3271,7 +3271,7 @@ body {
 }
 @media (max-width: 375px) {
   .article__title {
-    font-size: 2.24rem;
+    font-size: 1.88rem;
   }
   .article-text__title {
     font-size: 1.74rem;
