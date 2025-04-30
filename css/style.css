@@ -5,6 +5,7 @@ html {
 body {
   font-family: "Inter", serif;
   font-size: 1.8rem;
+  background-color: #f9f9f9;
 }
 
 .wrapper {
@@ -3107,4 +3108,74 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+}
+/*blog-article*/
+.article {
+  padding: 12.6rem 0 16.8rem;
+}
+.article__autor {
+  margin-bottom: 6.15rem;
+}
+.article__img-big {
+  margin-bottom: 8rem;
+  width: 100%;
+  height: 40.3rem;
+}
+.article__img-big img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.article__title {
+  margin-bottom: 3.2rem;
+  font-size: 3.74rem;
+  font-weight: 600;
+}
+.article__items {
+  display: flex;
+}
+.article__item:first-child {
+  max-width: 72%;
+}
+
+.article-text {
+  padding-right: 7.5rem;
+}
+.article-text__title {
+  margin-bottom: 3.5rem;
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: #252525;
+}
+.article-text__title:not(:first-child) {
+  margin-top: 9rem;
+}
+.article-text__text {
+  font-size: 2.2rem;
+  line-height: 202%;
+  color: #252525;
+}
+.article-text__text ul {
+  margin-top: 5.6rem;
+}
+.article-text__text li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.article-text__button {
+  margin-top: 10rem;
+  max-width: 24.5rem;
+  display: flex;
+  align-items: center;
+}
+.article-text__button-text {
+  margin-right: 2.71rem;
+  font-size: 2.03rem;
+}
+
+.aticle-images__card:not(:last-child) {
+  margin-bottom: 2.26rem;
 }
