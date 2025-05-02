@@ -3289,3 +3289,133 @@ body {
     font-size: 1.14rem;
   }
 }
+/*contacts-------------*/
+.contacts {
+  padding: 20.4rem 0 21.2rem;
+  position: relative;
+}
+.contacts__just-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53.1rem;
+  height: 81.8rem;
+  padding-top: 8.44rem;
+  background-color: #6C5FBC;
+}
+.contacts__title {
+  font-weight: 600;
+  font-size: 4rem;
+}
+.contacts__title_white {
+  text-align: center;
+  font-size: 4.8rem;
+  color: #F9F9F9;
+}
+.contacts__title-body {
+  margin: 0 auto;
+  position: relative;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.contacts__img {
+  position: absolute;
+  right: -15rem;
+  bottom: -7.6rem;
+  max-width: 30.4rem;
+}
+.contacts__img-first {
+  width: 100%;
+}
+.contacts__img-decor {
+  position: absolute;
+  top: -1rem;
+  right: -3.78rem;
+  width: 3.78rem;
+}
+.contacts__img-decor img {
+  width: 100%;
+}
+.contacts__items {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__item:last-child {
+  max-width: 49.3rem;
+}
+.contacts__form {
+  margin-top: 6.2rem;
+}
+
+.title__decor-block {
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  width: 3rem;
+  height: 5.66rem;
+}
+.title__decor-first {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.title__decor-second {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.title__decor-arrow {
+  position: absolute;
+  top: 3rem;
+  left: -1rem;
+  max-width: 33.6rem;
+}
+.title__decor-arrow img {
+  width: 100%;
+}
+
+.form-contacts {
+  position: relative;
+}
+.form-contacts__name {
+  margin-bottom: 2.6rem;
+}
+.form-contacts__email {
+  margin-bottom: 5.2rem;
+}
+.form-contacts__query {
+  margin-bottom: 4.3rem;
+  height: 34.5rem;
+}
+.form-contacts__button {
+  width: 100%;
+  height: 7.6rem;
+  font-size: 2.08rem;
+}
+.form-contacts__decor {
+  position: absolute;
+  left: -11rem;
+  bottom: -9rem;
+  width: 15.27rem;
+  transform: rotate(10deg);
+}
+.form-contacts__decor img {
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  padding: 2.65rem 2.53rem;
+  background-color: inherit;
+  font-size: 1.69rem;
+  border: 0.2rem solid #6C5FBC;
+  border-radius: 1.69rem;
+}
+.message::-moz-placeholder {
+  text-transform: uppercase;
+  color: #B6B6B6;
+}
+.message::placeholder {
+  text-transform: uppercase;
+  color: #B6B6B6;
+}
