@@ -4533,6 +4533,9 @@ body {
 
 .form-contacts {
 	position: relative;
+		&__mobile-block {
+			display: none;
+		}
 		// .form-contacts__name
 
 		&__name {
@@ -4571,6 +4574,7 @@ body {
 			}
 		}
 }
+
 .message {
 	width: 100%;
 	padding: 2.65rem 2.53rem;
@@ -4585,3 +4589,200 @@ body {
 }
 
 
+@media (max-width: 1290px) {
+	.contacts {
+		padding: 14.93rem 0 15.08rem;
+
+		&__just-contact {
+			top: 14.93rem;
+			width: 37.76rem;
+			height: 58.17rem;
+		}
+
+		&__title_white {
+			font-size: 3.41rem;
+		}
+
+		&__img {
+			right: -4rem;
+		}
+
+		&__img-first {
+			width: 21.62rem;
+			height: 43.31rem;
+		}
+
+		&__item {
+			&:last-child {
+				max-width: 42rem;
+			}
+		}
+
+		&__title {
+			font-size: 2.84rem;
+		}
+	}
+
+	.title {
+	&__decor-block {
+		left: -2rem;
+		width: 2.13rem;
+		height: 4.02rem;
+	}
+
+	&__decor-first {
+		width: 0.97rem;
+		height: 1.23rem;
+	}
+
+	&__decor-second {
+		width: 0.79rem;
+		height: 1.33rem;
+	}
+
+	}
+
+	.message {
+		padding: 1.86rem 1.8rem;
+		font-size: 1.2rem;
+	}
+
+	.form-contacts {
+		&__name {
+			margin-bottom: 1.85rem;
+		}
+
+		&__email {
+			margin-bottom: 3.7rem;
+		}
+
+		&__query {
+			margin-bottom: 3.06rem;
+			height: 24.53rem;
+		}
+
+		&__button {
+			height: 5.4rem;
+			font-size: 1.48rem;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.contacts {
+		&__item {
+			&:last-child {
+				max-width: 35.06rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 890px) {
+	.contacts {
+		padding: 8rem 0 14rem;
+
+		&__just-contact {
+			top: 8rem;
+			width: 30rem;
+			height: 58.17rem;
+		}
+
+			&__img {
+			right: -1.5rem;
+		}
+	}
+
+	.form-contacts {
+		&__decor {
+			left: 0;
+			bottom: -11rem;
+			width: 15.27rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.contacts {
+		&__just-contact {
+			width: 22rem;
+		}
+
+		&__img {
+			bottom: 3rem;
+			right: 3rem;
+		}
+		&__img-first {
+			width: 16rem;
+			height: auto;
+		}
+
+		&__img-decor {
+			display: none;
+		}
+	}
+
+	.title {
+		&__decor-block {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.contacts {
+		padding: 5.1rem 0 10rem;
+
+		&__just-contact {
+			display: none;
+		}
+
+		&__item:last-child {
+			max-width: 100%;
+		}
+
+		&__form {
+			margin-top: 0;
+		}
+
+		&__title {
+			display: none;
+		}
+	}
+
+	.form-contacts {
+
+		&__mobile-block {
+			display: block;
+			margin-bottom: 4.6rem;
+			width: 100%;
+			height: 15rem;
+			padding-top: 2.38rem;
+			background-color: #6C5FBC;
+		}
+	}
+
+	.mobile-block {
+		&__block {
+			position: relative;
+			margin: 0 auto;
+			width: fit-content;
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 2.4rem;
+			color: #F9F9F9;
+		}
+
+		&__decor {
+			position: absolute;
+			top: 0;
+			left: -8rem;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+
+}
