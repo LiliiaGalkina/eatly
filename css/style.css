@@ -132,6 +132,9 @@ body {
   color: #6c5fbc;
   border-bottom: 1px solid #6c5fbc;
 }
+.menu__link_active {
+  color: #6C5FBC;
+}
 
 @media (max-width: 1024px) {
   .header {
