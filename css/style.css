@@ -3597,22 +3597,25 @@ body {
   left: -10rem;
   top: 0.3rem;
 }
+.pircing-main-block__title-decor img {
+  height: 100%;
+}
 .pircing-main-block__site-img-block {
-  position: absolute;
-  left: 14.5%;
-  top: 14rem;
+  margin: 0 auto;
+  max-width: 88.7rem;
+  position: relative;
+  top: 5rem;
 }
 .pircing-main-block__decor-up {
   width: 4rem;
   position: absolute;
-  right: -5rem;
+  right: -4rem;
   top: -3.6rem;
 }
 .pircing-main-block__decor-up img {
   width: 100%;
 }
 .pircing-main-block__site-img {
-  max-width: 88.7rem;
   box-shadow: 0.84rem 2.1rem 10rem rgba(0, 0, 0, 0.1019607843);
 }
 .pircing-main-block__site-img img {
@@ -3623,7 +3626,13 @@ body {
   bottom: -5rem;
   left: -5rem;
 }
+.pircing-main-block__decor-down img {
+  width: 100%;
+}
 
+.pricing {
+  padding-bottom: 11.8rem;
+}
 .pricing__info {
   padding: 5.1rem 9.2rem 5.41rem 6.3rem;
   border-radius: 1.5rem;
@@ -3634,7 +3643,6 @@ body {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 3.5rem;
-  border-bottom: 1px solid #CBCBCB;
 }
 .pricing__buttons {
   margin-left: auto;
@@ -3649,18 +3657,35 @@ body {
   letter-spacing: 3%;
 }
 
-.pricing-table__titles {
+.pricing-table {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  row-gap: 3.5rem;
+}
+.pricing-table__item {
+  font-size: 2.2rem;
+  line-height: 145%;
+  font-weight: 500;
+  color: #606060;
+}
+.pricing-table__item_three {
+  grid-column: span 3;
+}
+.pricing-table__item_border {
+  padding-bottom: 4rem;
   border-bottom: 1px solid #CBCBCB;
-  display: flex;
-  justify-content: space-between;
 }
-.pricing-table__titles-two {
-  flex: 0 1 50%;
-  display: flex;
-  justify-content: space-between;
+.pricing-table__item sup {
+  margin-right: 0.5rem;
+  vertical-align: 1.2em;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #272E35;
 }
-.pricing-table__empty {
-  flex: 1 1 50%;
+.pricing-table__item span {
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #272E35;
 }
 .pricing-table__col-title {
   margin-bottom: 2.5rem;
@@ -3669,58 +3694,209 @@ body {
   color: #282828;
 }
 .pricing-table__text {
-  margin-bottom: 3.7rem;
   max-width: 13.9rem;
   font-size: 1.6rem;
   line-height: 150%;
   font-weight: 500;
   color: #6E757C;
 }
-.pricing-table__big-digit {
-  padding: 4rem 0;
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #6E757C;
-  border-bottom: 1px solid #CBCBCB;
-}
-.pricing-table__big-digit sup {
-  margin-right: 0.5rem;
-  vertical-align: 1.2em;
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #272E35;
-}
-.pricing-table__big-digit span {
-  font-size: 6.4rem;
-  font-weight: 600;
-  color: #272E35;
-}
-.pricing-table__big-digit-item {
-  flex: 0 1 50%;
-}
-.pricing-table__big-digit-item:last-child {
-  text-align: center;
-}
-.pricing-table__table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 3.6rem;
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #606060;
-}
-.pricing-table__table td:first-child {
-  width: 50%;
-  -moz-text-align-last: left;
-       text-align-last: left;
-}
-.pricing-table__table td:not(first-child) {
-  width: 25%;
-  text-align: center;
-}
 .pricing-table__tbody-title {
   font-size: 2.4rem;
   font-weight: 600;
   color: #272E35;
+}
+
+.prising-mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .pircing-main-block {
+    padding: 4.69rem 0 45.58rem;
+  }
+  .pircing-main-block__block-violet {
+    height: 23.75rem;
+  }
+  .pircing-main-block__title {
+    font-size: 2.84rem;
+  }
+  .pircing-main-block__title-decor {
+    height: 5.54rem;
+    left: -7rem;
+  }
+  .pircing-main-block__site-img-block {
+    max-width: 63.08rem;
+  }
+  .pircing-main-block__decor-up {
+    width: 2.92rem;
+    right: -3rem;
+    top: -2.8rem;
+  }
+  .pircing-main-block__decor-down {
+    width: 3.3rem;
+    bottom: -3.2rem;
+    left: -3.2rem;
+  }
+  .pricing__info {
+    padding: 3.63rem 6.54rem 3.84rem 4.48rem;
+  }
+  .pricing__buttons {
+    max-width: 36.98rem;
+  }
+  .pricing__button {
+    font-size: 1.16rem;
+  }
+  .pricing-table__item {
+    font-size: 1.56rem;
+  }
+  .pricing-table__item sup {
+    margin-right: 0.3rem;
+    vertical-align: 1.2em;
+    font-size: 1.71rem;
+  }
+  .pricing-table__item span {
+    font-size: 4.55rem;
+  }
+  .pricing-table__item img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .pricing-table__col-title {
+    margin-bottom: 1.79rem;
+    font-size: 2.84rem;
+  }
+  .pricing-table__text {
+    max-width: 10rem;
+    font-size: 1.14rem;
+  }
+}
+@media (max-width: 768px) {
+  .pircing-main-block {
+    padding: 4.8rem 0 35rem;
+  }
+  .pircing-main-block__block-violet {
+    padding: 3rem 1rem;
+    height: 20rem;
+  }
+  .pircing-main-block__site-img-block {
+    max-width: 58rem;
+  }
+  .pircing-main-block__decor-up {
+    display: none;
+  }
+  .pircing-main-block__decor-down {
+    display: none;
+  }
+  .pricing-table {
+    grid-template-columns: 48% 25% 25%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+  .pricing-table__item {
+    font-size: 1.5rem;
+  }
+  .pricing-table__item_img {
+    text-align: right;
+  }
+  .pricing-table__item sup {
+    margin-right: 0.2rem;
+    font-size: 1.5rem;
+  }
+  .pricing-table__item span {
+    font-size: 3.5rem;
+  }
+  .pricing-table__col-title {
+    margin-bottom: 1.4rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .pricing-table__text {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .pircing-main-block {
+    padding: 4.8rem 0 30rem;
+  }
+}
+@media (max-width: 480px) {
+  .pircing-main-block {
+    padding: 4.8rem 0 8rem;
+  }
+  .pircing-main-block__block-violet {
+    height: 12rem;
+  }
+  .pircing-main-block__site-img-block {
+    display: none;
+  }
+  .pricing {
+    display: none;
+  }
+  .prising-mobile {
+    display: block;
+  }
+  .prising-mobile__item {
+    padding: 3.1rem 2.8rem 4.3rem 2.1rem;
+    border-radius: 1.5rem;
+    background-color: #FFF;
+  }
+  .prising-mobile__item:not(:last-child) {
+    margin-bottom: 3.8rem;
+  }
+  .prising-mobile__title {
+    margin-bottom: 1.7rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+  .prising-mobile__price {
+    margin-bottom: 2.4rem;
+    padding-bottom: 2.3rem;
+    font-size: 1.14rem;
+    line-height: 150%;
+    font-weight: 500;
+    color: #6E757C;
+    border-bottom: 1px solid #C2C2C2;
+  }
+  .prising-mobile__price sup {
+    margin-right: 0.3rem;
+    vertical-align: 1.2em;
+    font-size: 1.71rem;
+    font-weight: 600;
+    color: #272E35;
+  }
+  .prising-mobile__price span {
+    font-size: 4.55rem;
+    font-weight: 600;
+    color: #272E35;
+  }
+  .prising-mobile__text {
+    margin-bottom: 1.6rem;
+    max-width: 10.5rem;
+    font-size: 1.14rem;
+    line-height: 150%;
+    font-weight: 500;
+    color: #6E757C;
+  }
+  .prising-mobile__button {
+    margin-bottom: 3.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .prising-mobile__features {
+    display: flex;
+    align-items: flex-end;
+  }
+  .prising-mobile__features-item {
+    display: flex;
+    align-items: center;
+  }
+  .features__text {
+    margin-right: 1rem;
+    font-size: 1.38rem;
+    line-height: 150%;
+    font-weight: 700;
+  }
 }

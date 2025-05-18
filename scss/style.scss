@@ -4825,15 +4825,18 @@ body {
 			position: absolute;
 			left: -10rem;
 			top: 0.3rem;
+			img {
+				height: 100%;
+			}
 		}
 
 		// .pircing-main-block__site-img-block
 
 		&__site-img-block {
-			position: absolute;
-			left: 14.5%;
-			top: 14rem;
-			
+			margin: 0 auto;
+			max-width: 88.7rem;
+			position: relative;
+			top: 5rem;
 		}
 
 		// .pircing-main-block__decor-up
@@ -4841,7 +4844,7 @@ body {
 		&__decor-up {
 			width: 4rem;
 			position: absolute;
-			right: -5rem;
+			right: -4rem;
 			top: -3.6rem;
 			img {
 				width: 100%;
@@ -4851,7 +4854,6 @@ body {
 		// .pircing-main-block__site-img
 
 		&__site-img {
-			max-width: 88.7rem;
 			box-shadow: 0.84rem 2.1rem 10rem #0000001A;
 			img{
 				width: 100%;
@@ -4864,11 +4866,14 @@ body {
 			position: absolute;
 			bottom: -5rem;
 			left: -5rem;
+			img {
+				width: 100%;
+			}
 		}
 }
 
 .pricing {
-	
+	padding-bottom: 11.8rem;
 		// .pricing__info
 
 		&__info {
@@ -4884,7 +4889,6 @@ body {
 			width: 100%;
 			border-collapse: separate;
 			border-spacing: 0 3.5rem;
-			border-bottom: 1px solid #CBCBCB;
 		}
 
 		// .pricing__buttons
@@ -4907,23 +4911,38 @@ body {
 		}
 }
 .pricing-table {
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	row-gap: 3.5rem;
 
-	&__titles {
-		border-bottom: 1px solid #CBCBCB;
-		display: flex;
-		justify-content: space-between;
+	&__item {
+		font-size: 2.2rem;
+		line-height: 145%;
+		font-weight: 500;
+		color: #606060;
+
+		&_three {
+			grid-column: span 3;
+		}
+
+		&_border {
+			padding-bottom: 4rem;
+			border-bottom: 1px solid #CBCBCB;
+		}
+		sup {
+				margin-right: 0.5rem;
+				vertical-align: 1.2em;
+				font-size: 2.4rem;
+				font-weight: 600;
+				color: #272E35;
+			}
+			span {
+				font-size: 6.4rem;
+				font-weight: 600;
+				color: #272E35;
+			}
 	}
 
-	&__titles-two {
-		flex: 0 1 50%;
-		display: flex;
-		justify-content: space-between;
-	
-	}
-
-	&__empty {
-		flex: 1 1 50%;
-	}
 		// .pricing-table__col-title
 
 		&__col-title {
@@ -4936,60 +4955,11 @@ body {
 		// .pricing-table__text
 
 		&__text {
-			margin-bottom: 3.7rem;
 			max-width: 13.9rem;
 			font-size: 1.6rem;
 			line-height: 150%;
 			font-weight: 500;
 			color: #6E757C;
-		}
-
-		// .pricing-table__big-digit
-
-		&__big-digit {
-			padding: 4rem 0;
-			display: flex;
-			font-size: 1.6rem;
-			font-weight: 500;
-			color: #6E757C;
-			border-bottom: 1px solid #CBCBCB;
-			sup {
-				margin-right: 0.5rem;
-				vertical-align: 1.2em;
-				font-size: 2.4rem;
-				font-weight: 600;
-				color: #272E35;
-			}
-			span {
-				font-size: 6.4rem;
-				font-weight: 600;
-				color: #272E35;
-			}
-		}
-
-		&__big-digit-item {
-			flex: 0 1 50%;
-			&:last-child {
-				text-align: center;
-			}
-		}
-
-		&__table {
-			width: 100%;
-			border-collapse: separate;
-			border-spacing: 0 3.6rem;
-			font-size: 2.2rem;
-			font-weight: 500;
-			color: #606060;
-
-			td:first-child{
-				width: 50%;
-				text-align-last: left;
-			}
-			td:not(first-child){
-				width: 25%;
-				text-align: center;
-			}
 		}
 
 		// .pricing-table__tbody-title
@@ -5001,3 +4971,264 @@ body {
 		}
 }
 
+.prising-mobile {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.pircing-main-block {
+		padding: 4.69rem 0 45.58rem;
+
+		&__block-violet {
+			height: 23.75rem;
+		}
+
+		&__title {
+			font-size: 2.84rem;
+		}
+
+		&__title-decor {
+			height: 5.54rem;
+			left: -7rem;
+		}
+
+		&__site-img-block {
+			max-width: 63.08rem;
+		}
+
+		&__decor-up{
+			width: 2.92rem;
+			right: -3rem;
+			top: -2.8rem;
+		}
+
+		&__decor-down {
+			width: 3.3rem;
+			bottom: -3.2rem;
+			left: -3.2rem;
+		}
+	}
+
+	.pricing {
+		&__info {
+			padding: 3.63rem 6.54rem 3.84rem 4.48rem;
+		}
+
+		&__buttons {
+			max-width: 36.98rem;
+		}
+
+		&__button {
+			font-size: 1.16rem;
+		}
+	}
+
+	.pricing-table {
+		&__item {
+			font-size: 1.56rem;
+			sup {
+				margin-right: 0.3rem;
+				vertical-align: 1.2em;
+				font-size: 1.71rem;
+			}
+			span {
+				font-size: 4.55rem;
+			}
+			img {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+
+		&__col-title {
+			margin-bottom: 1.79rem;
+			font-size: 2.84rem;
+		}
+
+		&__text {
+			max-width: 10rem;
+			font-size: 1.14rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.pircing-main-block {
+		padding: 4.8rem 0 35rem;
+
+		&__block-violet {
+			padding: 3rem 1rem;
+			height: 20rem;
+		}
+
+		&__site-img-block {
+			max-width: 58rem;
+		}
+
+		&__decor-up{
+			display: none;
+		}
+
+		&__decor-down {
+			display: none;
+		}
+	}
+
+	.pricing-table {
+		grid-template-columns: 48% 25% 25%;
+		column-gap: 1%;
+		&__item {
+			font-size: 1.5rem;
+			&_img {
+				text-align: right;
+			}
+			sup {
+				margin-right: 0.2rem;
+				font-size: 1.5rem;
+			}
+			span {
+				font-size: 3.5rem;
+			}
+		}
+
+		&__col-title {
+			margin-bottom: 1.4rem;
+			text-align: center;
+			font-size: 2rem;
+		}
+
+		&__text {
+			text-align: center;
+			font-size: 1rem;
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.pircing-main-block {
+		padding: 4.8rem 0 30rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.pircing-main-block {
+		padding: 4.8rem 0 8rem;
+
+		&__block-violet {
+			height: 12rem;
+		}
+		&__site-img-block {
+			display: none;
+		}
+	}
+
+	.pricing {
+		display: none;
+	}
+
+	.prising-mobile {
+		display: block;
+
+			// .prising-mobile__item
+
+			&__item {
+				padding: 3.1rem 2.8rem 4.3rem 2.1rem;
+				border-radius: 1.5rem;
+				background-color: #FFF;	
+				&:not(:last-child) {
+					margin-bottom: 3.8rem;
+				}
+			}
+
+			// .prising-mobile__title
+
+			&__title {
+				margin-bottom: 1.7rem;
+				font-size: 2.6rem;
+				font-weight: 600;
+			}
+
+			// .prising-mobile__price
+
+			&__price {
+				margin-bottom: 2.4rem;
+				padding-bottom: 2.3rem;
+				font-size: 1.14rem;
+				line-height: 150%;
+				font-weight: 500;
+				color: #6E757C;
+				border-bottom: 1px solid #C2C2C2;
+				sup {
+				margin-right: 0.3rem;
+				vertical-align: 1.2em;
+				font-size: 1.71rem;
+				font-weight: 600;
+				color: #272E35;
+				}
+				span {
+					font-size: 4.55rem;
+					font-weight: 600;
+					color: #272E35;
+				}
+			}
+
+			// .prising-mobile__text
+
+			&__text {
+				margin-bottom: 1.6rem;
+				max-width: 10.5rem;
+				font-size: 1.14rem;
+				line-height: 150%;
+				font-weight: 500;
+				color: #6E757C;
+			}
+
+			// .prising-mobile__button
+
+			&__button {
+				margin-bottom: 3.3rem;
+				font-size: 1.2rem;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+
+			// .prising-mobile__features
+
+			&__features {
+				display: flex;
+				align-items: flex-end;
+			}
+
+			// .prising-mobile__features-items
+
+			&__features-items {
+			}
+
+			// .prising-mobile__features-item
+
+			&__features-item {
+				display: flex;
+				align-items: center;
+			}
+	}
+
+	.features {
+
+			// .features__text
+
+			&__text {
+				margin-right: 1rem;
+				font-size: 1.38rem;
+				line-height: 150%;
+				font-weight: 700;
+
+			}
+
+			// .features__img
+
+			&__img {
+			}
+	}
+
+}
