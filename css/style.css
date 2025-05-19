@@ -133,7 +133,7 @@ body {
   border-bottom: 1px solid #6c5fbc;
 }
 .menu__link_active {
-  color: #6C5FBC;
+  color: #6c5fbc;
 }
 
 @media (max-width: 1024px) {
@@ -3156,7 +3156,7 @@ body {
 
 .article-text {
   padding-right: 7.5rem;
-  border-right: 0.1rem solid #9B9B9B;
+  border-right: 0.1rem solid #9b9b9b;
 }
 .article-text__title {
   margin-bottom: 3.5rem;
@@ -3304,7 +3304,7 @@ body {
   width: 53.1rem;
   height: 81.8rem;
   padding-top: 8.44rem;
-  background-color: #6C5FBC;
+  background-color: #6c5fbc;
 }
 .contacts__title {
   font-weight: 600;
@@ -3313,7 +3313,7 @@ body {
 .contacts__title_white {
   text-align: center;
   font-size: 4.8rem;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 .contacts__title-body {
   margin: 0 auto;
@@ -3414,16 +3414,16 @@ body {
   padding: 2.65rem 2.53rem;
   background-color: inherit;
   font-size: 1.69rem;
-  border: 0.2rem solid #6C5FBC;
+  border: 0.2rem solid #6c5fbc;
   border-radius: 1.69rem;
 }
 .message::-moz-placeholder {
   text-transform: uppercase;
-  color: #B6B6B6;
+  color: #b6b6b6;
 }
 .message::placeholder {
   text-transform: uppercase;
-  color: #B6B6B6;
+  color: #b6b6b6;
 }
 
 @media (max-width: 1290px) {
@@ -3547,7 +3547,7 @@ body {
     width: 100%;
     height: 15rem;
     padding-top: 2.38rem;
-    background-color: #6C5FBC;
+    background-color: #6c5fbc;
   }
   .mobile-block__block {
     position: relative;
@@ -3558,7 +3558,7 @@ body {
   .mobile-block__title {
     text-align: center;
     font-size: 2.4rem;
-    color: #F9F9F9;
+    color: #f9f9f9;
   }
   .mobile-block__decor {
     position: absolute;
@@ -3576,7 +3576,7 @@ body {
   width: 100%;
   height: 33.4rem;
   padding-top: 4.43rem;
-  background-color: #5C4EAE;
+  background-color: #5c4eae;
 }
 .pircing-main-block__title-block {
   margin: 0 auto;
@@ -3673,19 +3673,19 @@ body {
 }
 .pricing-table__item_border {
   padding-bottom: 4rem;
-  border-bottom: 1px solid #CBCBCB;
+  border-bottom: 1px solid #cbcbcb;
 }
 .pricing-table__item sup {
   margin-right: 0.5rem;
   vertical-align: 1.2em;
   font-size: 2.4rem;
   font-weight: 600;
-  color: #272E35;
+  color: #272e35;
 }
 .pricing-table__item span {
   font-size: 6.4rem;
   font-weight: 600;
-  color: #272E35;
+  color: #272e35;
 }
 .pricing-table__col-title {
   margin-bottom: 2.5rem;
@@ -3698,12 +3698,12 @@ body {
   font-size: 1.6rem;
   line-height: 150%;
   font-weight: 500;
-  color: #6E757C;
+  color: #6e757c;
 }
 .pricing-table__tbody-title {
   font-size: 2.4rem;
   font-weight: 600;
-  color: #272E35;
+  color: #272e35;
 }
 
 .prising-mobile {
@@ -3840,7 +3840,7 @@ body {
   .prising-mobile__item {
     padding: 3.1rem 2.8rem 4.3rem 2.1rem;
     border-radius: 1.5rem;
-    background-color: #FFF;
+    background-color: #fff;
   }
   .prising-mobile__item:not(:last-child) {
     margin-bottom: 3.8rem;
@@ -3856,20 +3856,20 @@ body {
     font-size: 1.14rem;
     line-height: 150%;
     font-weight: 500;
-    color: #6E757C;
-    border-bottom: 1px solid #C2C2C2;
+    color: #6e757c;
+    border-bottom: 1px solid #c2c2c2;
   }
   .prising-mobile__price sup {
     margin-right: 0.3rem;
     vertical-align: 1.2em;
     font-size: 1.71rem;
     font-weight: 600;
-    color: #272E35;
+    color: #272e35;
   }
   .prising-mobile__price span {
     font-size: 4.55rem;
     font-weight: 600;
-    color: #272E35;
+    color: #272e35;
   }
   .prising-mobile__text {
     margin-bottom: 1.6rem;
@@ -3877,7 +3877,7 @@ body {
     font-size: 1.14rem;
     line-height: 150%;
     font-weight: 500;
-    color: #6E757C;
+    color: #6e757c;
   }
   .prising-mobile__button {
     margin-bottom: 3.3rem;
@@ -3886,12 +3886,30 @@ body {
     text-transform: uppercase;
   }
   .prising-mobile__features {
-    display: flex;
-    align-items: flex-end;
+    margin-bottom: 2.4rem;
+  }
+  .prising-mobile__features-items {
+    display: none;
   }
   .prising-mobile__features-item {
     display: flex;
     align-items: center;
+    font-size: 1.19rem;
+  }
+  .prising-mobile__features-item:not(:last-child) {
+    margin-bottom: 1.3rem;
+  }
+  .prising-mobile__features-item img {
+    margin-right: 1.15rem;
+    width: 1.89rem;
+    height: 1.89rem;
+  }
+  .features {
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.5s ease;
   }
   .features__text {
     margin-right: 1rem;
@@ -3899,4 +3917,27 @@ body {
     line-height: 150%;
     font-weight: 700;
   }
+  .features__img img {
+    vertical-align: baseline;
+  }
+}
+@media (max-width: 340px) {
+  .pircing-main-block__block-violet {
+    height: 10rem;
+  }
+  .pircing-main-block__title {
+    font-size: 1.5rem;
+  }
+  .pircing-main-block__title-decor {
+    width: 3.29rem;
+    height: 3.09rem;
+    left: -4rem;
+  }
+}
+.features-items-show {
+  display: block;
+}
+
+.features-arrow-rotate {
+  transform: rotate(180deg);
 }
