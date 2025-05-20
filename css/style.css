@@ -3941,3 +3941,137 @@ body {
 .features-arrow-rotate {
   transform: rotate(180deg);
 }
+
+/*popup Sign Up*/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.popup__body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.popup__content {
+  position: relative;
+  width: 144rem;
+  height: auto;
+  display: flex;
+  z-index: 10;
+}
+.popup__item-left {
+  flex: 0 1 54%;
+}
+.popup__item-right {
+  flex: 0 1 46%;
+}
+
+.popup-sign {
+  padding: 3.2rem 4.8rem 4.8rem;
+  font-family: "Poppins", serif;
+  background-color: #fff;
+}
+.popup-sign__logo {
+  margin-bottom: 8.8rem;
+  width: 5.3rem;
+  height: 4.88rem;
+  display: block;
+}
+.popup-sign__logo img {
+  width: 100%;
+}
+.popup-sign__title {
+  margin-bottom: 4.83rem;
+  font-size: 3.53rem;
+  font-weight: 600;
+  text-align: center;
+}
+.popup-sign__form {
+  margin: 0 auto 2.33rem;
+  max-width: 38.8rem;
+}
+.popup-sign__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-sign__button {
+  margin-bottom: 3.3rem;
+  width: 18.34rem;
+  height: 6.34rem;
+  border-radius: 1.33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+.popup-sign__or {
+  margin-bottom: 3.56rem;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: rgba(0, 90, 100, 0.3490196078);
+  text-align: center;
+}
+.popup-sign__input {
+  width: 100%;
+  height: 7.45rem;
+  border-radius: 1.43rem;
+  background-color: #F5F5F5;
+}
+.popup-sign__input::-moz-placeholder {
+  font-size: 1.67rem;
+  line-height: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 7%;
+  color: #C2C3CB;
+}
+.popup-sign__input::placeholder {
+  font-size: 1.67rem;
+  line-height: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 7%;
+  color: #C2C3CB;
+}
+.popup-sign__user {
+  margin-bottom: 2.45rem;
+}
+.popup-sign__mail {
+  margin-bottom: 2.45rem;
+}
+.popup-sign__pasw {
+  margin-bottom: 3.89rem;
+}
+.popup-sign__send-form {
+  width: 100%;
+  height: 7.45rem;
+}
+.popup-sign__text {
+  text-align: center;
+  font-size: 1.89rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #3E3E3E;
+}
+.popup-sign__text a {
+  font-weight: 700;
+  color: #6C5FBC;
+}
+.popup-sign__footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+  color: #718096;
+}
+.popup-violet {
+  background-color: #6C5FBC;
+}
