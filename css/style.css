@@ -3944,31 +3944,22 @@ body {
 
 /*popup Sign Up*/
 .popup {
-  position: fixed;
   width: 100%;
-  height: 100%;
   background-color: #f9f9f9;
   top: 0;
   left: 0;
-  transition: all 0.5s ease;
-}
-.popup__body {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 .popup__content {
   position: relative;
-  width: 144rem;
-  height: auto;
+  width: 100%;
   display: flex;
   z-index: 10;
 }
 .popup__item-left {
-  flex: 0 1 54%;
+  flex: 0 1 50%;
 }
 .popup__item-right {
-  flex: 0 1 46%;
+  flex: 0 1 50%;
 }
 
 .popup-sign {
@@ -3977,7 +3968,7 @@ body {
   background-color: #fff;
 }
 .popup-sign__logo {
-  margin-bottom: 8.8rem;
+  margin-bottom: 6.8rem;
   width: 5.3rem;
   height: 4.88rem;
   display: block;
@@ -4008,6 +3999,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #F5F5F5;
+  transition: all 0.5s ease;
+}
+.popup-sign__button:hover {
+  border: 0.1rem solid #6C5FBC;
 }
 .popup-sign__or {
   margin-bottom: 3.56rem;
@@ -4020,8 +4015,13 @@ body {
 .popup-sign__input {
   width: 100%;
   height: 7.45rem;
+  padding-left: 7.89rem;
   border-radius: 1.43rem;
   background-color: #F5F5F5;
+  font-size: 1.67rem;
+  font-weight: 500;
+  letter-spacing: 2%;
+  color: #6C5FBC;
 }
 .popup-sign__input::-moz-placeholder {
   font-size: 1.67rem;
@@ -4039,20 +4039,52 @@ body {
   letter-spacing: 7%;
   color: #C2C3CB;
 }
+.popup-sign__input:focus {
+  border: 0.17rem solid #6C5FBC;
+}
 .popup-sign__user {
   margin-bottom: 2.45rem;
+  background-image: url("../img/popup/icons/user.svg");
+  background-repeat: no-repeat;
+  background-position: 2.45rem;
+  transition: all 0.5s ease;
+}
+.popup-sign__user:focus {
+  background-image: url("../img/popup/icons/user-active.svg");
 }
 .popup-sign__mail {
   margin-bottom: 2.45rem;
+  background-image: url("../img/popup/icons/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 2.45rem;
+  transition: all 0.5s ease;
+}
+.popup-sign__mail:focus {
+  background-image: url("../img/popup/icons/mail-active.svg");
 }
 .popup-sign__pasw {
   margin-bottom: 3.89rem;
+  background-image: url("../img/popup/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: 2.45rem;
+  transition: all 0.5s ease;
+}
+.popup-sign__pasw:focus {
+  background-image: url("../img/popup/icons/close-active.svg");
 }
 .popup-sign__send-form {
   width: 100%;
   height: 7.45rem;
+  font-size: 1.78rem;
+  letter-spacing: 3%;
+  font-weight: 600;
+}
+.popup-sign__send-form:hover {
+  background-color: #4a3da0;
+  color: #FFF;
 }
 .popup-sign__text {
+  margin-bottom: 5.12rem;
   text-align: center;
   font-size: 1.89rem;
   line-height: 100%;
@@ -4062,6 +4094,10 @@ body {
 .popup-sign__text a {
   font-weight: 700;
   color: #6C5FBC;
+  transition: all 0.5s ease;
+}
+.popup-sign__text a:hover {
+  text-decoration: underline;
 }
 .popup-sign__footer {
   display: flex;
@@ -4072,6 +4108,66 @@ body {
   font-weight: 500;
   color: #718096;
 }
+
 .popup-violet {
   background-color: #6C5FBC;
+}
+.popup-violet__images {
+  position: relative;
+  margin-top: 20.84rem;
+  margin-bottom: 9.4rem;
+}
+.popup-violet__img-main {
+  margin: 12rem auto 0;
+  position: relative;
+  max-width: 35.99rem;
+}
+.popup-violet__img-small {
+  position: absolute;
+  top: -5.4rem;
+  right: -11rem;
+  width: 30rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+.popup-violet__img-graf {
+  position: absolute;
+  bottom: 0;
+  left: -3rem;
+  max-width: 15.93rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+}
+.popup-violet__img-squares {
+  position: absolute;
+  top: -8rem;
+  left: 8.6rem;
+}
+.popup-violet__img-square-transparent {
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+}
+.popup-violet__img-circle {
+  position: absolute;
+  right: 10rem;
+  bottom: 0;
+}
+.popup-violet__info {
+  margin: 0 auto;
+  max-width: 50rem;
+  color: #fff;
+}
+.popup-violet__title {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 110%;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+}
+.popup-violet__text {
+  font-size: 1.4rem;
+  line-height: 150%;
+  font-weight: 500;
 }

@@ -5274,29 +5274,16 @@ body {
 /*popup Sign Up*/
 
 .popup {
-	position: fixed;
 	width: 100%;
-	height: 100%;
 	background-color: #f9f9f9;
 	top: 0;
 	left: 0;
-	
-	
-	transition: all 0.5s ease;
-		// .popup__body
-
-		&__body {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-		}
 
 		// .popup__content
 
 		&__content {
 			position: relative;
-			width: 144rem;
-			height: auto;
+			width: 100%;
 			display: flex;
 			z-index: 10;
 		}
@@ -5304,14 +5291,14 @@ body {
 		// .popup__item-left
 
 		&__item-left {
-			flex: 0 1 54%;
+			flex: 0 1 50%;
 			
 		}
 
 		// .popup__item-right
 
 		&__item-right {
-			flex: 0 1 46%;
+			flex: 0 1 50%;
 		}
 }
 .popup-sign {
@@ -5322,7 +5309,7 @@ body {
 		// .popup-sign__logo
 
 		&__logo {
-			margin-bottom: 8.8rem;
+			margin-bottom: 6.8rem;
 			width: 5.3rem;
 			height: 4.88rem;
 			display: block;
@@ -5366,6 +5353,11 @@ body {
 			justify-content: center;
 			align-items: center;
 			background-color: #F5F5F5;
+			transition: all 0.5s ease;
+
+			&:hover {
+				border: 0.1rem solid #6C5FBC;
+			}
 		}
 
 		// .popup-sign__or
@@ -5382,8 +5374,13 @@ body {
 		&__input {
 			width: 100%;
 			height: 7.45rem;
+			padding-left: 7.89rem;
 			border-radius: 1.43rem;
 			background-color: #F5F5F5;
+			font-size: 1.67rem;
+			font-weight: 500;
+			letter-spacing: 2%;
+			color: #6C5FBC;
 			&::placeholder {
 				font-size: 1.67rem;
 				line-height: 100%;
@@ -5392,23 +5389,51 @@ body {
 				letter-spacing: 7%;
 				color: #C2C3CB;
 			}
+
+			&:focus {
+				border: 0.17rem solid #6C5FBC;
+			}
 		}
 		// .popup-sign__user
 
 		&__user {
 			margin-bottom: 2.45rem;
+			background-image: url("../img/popup/icons/user.svg");
+			background-repeat: no-repeat;
+			background-position: 2.45rem;
+			transition: all 0.5s ease;
+
+			&:focus {
+				background-image: url("../img/popup/icons/user-active.svg");
+			}
 		}
 
 		// .popup-sign__mail
 
 		&__mail {
 			margin-bottom: 2.45rem;
+			background-image: url("../img/popup/icons/mail.svg");
+			background-repeat: no-repeat;
+			background-position: 2.45rem;
+			transition: all 0.5s ease;
+
+				&:focus {
+				background-image: url("../img/popup/icons/mail-active.svg");
+			}
 		}
 
 		// .popup-sign__pasw
 
 		&__pasw {
 			margin-bottom: 3.89rem;
+			background-image: url("../img/popup/icons/close.svg");
+			background-repeat: no-repeat;
+			background-position: 2.45rem;
+			transition: all 0.5s ease;
+			
+				&:focus {
+				background-image: url("../img/popup/icons/close-active.svg");
+			}
 		}
 
 		// .popup-sign__send-form
@@ -5416,11 +5441,20 @@ body {
 		&__send-form {
 			width: 100%;
 			height: 7.45rem;
+			font-size: 1.78rem;
+			letter-spacing: 3%;
+			font-weight: 600;
+			
+			&:hover {
+				background-color: #4a3da0;
+				color: #FFF;
+			}
 		}
 
 		// .popup-sign__text
 
 		&__text {
+			margin-bottom: 5.12rem;
 			text-align: center;
 			font-size: 1.89rem;
 			line-height: 100%;
@@ -5429,6 +5463,11 @@ body {
 			a {
 				font-weight: 700;
 				color: #6C5FBC;
+				transition: all 0.5s ease;
+				
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -5443,16 +5482,6 @@ body {
 			font-weight: 500;
 			color: #718096;
 		}
-
-		// .popup-sign__footer-policy
-
-		&__footer-policy {
-		}
-
-		// .popup-sign__footer-copyright
-
-		&__footer-copyright {
-		}
 }
 
 .popup-violet {
@@ -5460,50 +5489,89 @@ body {
 		// .popup-violet__images
 
 		&__images {
+			position: relative;
+			margin-top: 20.84rem;
+			margin-bottom: 9.4rem;
 		}
 
 		// .popup-violet__img-main
 
 		&__img-main {
+			margin: 12rem auto 0;
+			position: relative;
+			max-width: 35.99rem;
 		}
 
 		// .popup-violet__img-small
 
 		&__img-small {
+			position: absolute;
+			top: -5.4rem;
+			right: -11rem;
+			width: 30rem;
+			border-radius: 2rem;
+			background-color: #fff;
 		}
 
 		// .popup-violet__img-graf
 
 		&__img-graf {
+			position: absolute;
+			bottom: 0;
+			left: -3rem;
+			max-width: 15.93rem;
+			border-radius: 1.5rem;
+			background-color: #fff;
 		}
 
 		// .popup-violet__img-squares
 
 		&__img-squares {
+			position: absolute;
+			top: -8rem;
+			left: 8.6rem;
 		}
 
 		// .popup-violet__img-square-transparent
 
 		&__img-square-transparent {
+			position: absolute;
+			top: 2.5rem;
+			left: 2rem;
 		}
 
 		// .popup-violet__img-circle
 
 		&__img-circle {
+			position: absolute;
+			right: 10rem;
+			bottom: 0;
 		}
 
 		// .popup-violet__info
 
 		&__info {
+			margin: 0 auto;
+			max-width: 50rem;
+			color: #fff;
 		}
 
 		// .popup-violet__title
 
 		&__title {
+			margin-bottom: 2rem;
+			font-size: 4rem;
+			line-height: 110%;
+			font-weight: 800;
+			text-align: center;
+			color: #fff;
 		}
 
 		// .popup-violet__text
 
 		&__text {
+			font-size: 1.4rem;
+			line-height: 150%;
+			font-weight: 500;
 		}
 }
