@@ -68,15 +68,19 @@ const features2 = document.querySelector("#features2");
 const featuresItems2 = document.querySelector("#features-items2");
 const featuresArrow2 = document.querySelector("#features-arrow2");
 
-/*features1.addEventListener("click", function() {
+if (features1) {
+features1.addEventListener("click", function () {
   featuresArrow1.classList.toggle("features-arrow-rotate");
   featuresItems1.classList.toggle("features-items-show");
 });
+}
 
+if (features2) {
 features2.addEventListener("click", function() {
   featuresArrow2.classList.toggle("features-arrow-rotate");
   featuresItems2.classList.toggle("features-items-show");
-});*/
+});
+}
 
 
 //popup sign-up

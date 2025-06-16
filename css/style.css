@@ -3950,6 +3950,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 6;
 }
 .popup__container {
   position: relative;
@@ -4119,6 +4120,7 @@ body {
   position: absolute;
   top: 3rem;
   right: 2rem;
+  z-index: 10;
   width: 3rem;
   height: 3rem;
   cursor: pointer;
@@ -4323,5 +4325,8 @@ body {
   }
   .popup-violet {
     display: none;
+  }
+  .popup-violet__close span {
+    background-color: #6C5FBC;
   }
 }

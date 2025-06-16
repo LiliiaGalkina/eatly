@@ -1,335 +1,813 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eatly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container container">
-                <div class="header__navigation">
-                    <a class="header__logo logo" href="index.html">
-                        <div class="logo__img"><img src="img/home/logo.png" alt="logo"></div>
-                        <div class="logo__text">eatly</div>
-                    </a>
-                    <nav class="header__menu menu">
-                        <div id="burger" class="menu__burger"><span></span></div>
-                        <ul id="menu" class="menu__list">
-                            <li class="menu__item"><a href="menu.html" class="menu__link menu__link_active">Menu</a></li>
-                            <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
-                            <li class="menu__item"><a href="contacts.html" class="menu__link">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__buttons">
-                    <a href="#" class="header__link">Login</a>
-                    <button class="header__button button">Sign up</button>
-                </div>
+      <header class="header">
+        <div id="popup-sign-up" class="popup sign-up">
+          <div class="popup__container container">
+            <div id="popup-signup-close" class="popup-violet__close">
+              <span></span><span></span>
             </div>
-        </header>
-        <main class="main">
-            <div class="search-info">
-                <div class="container">
-                    <div class="search-info__items">
-                        <div class="search-info__item left">
-                            <div class="left__promo promo-left">
-                                <h2 class="promo-left__title">50% OFF</h2>
-                                <div class="promo-left__text">WEEKEND</div>
-                                <div class="promo-left__img"><img src="img/home/get50.png" alt="приготовленное мясо с зеленью на тарелке"></div>
-                                <div class="promo-left__decor"><img src="img/menu/decor.png" alt="три синие полоски"></div>
-                            </div>
-                            <form action="#" class="left__search">
-                                <input class="left__search-input" type="search" placeholder="Search">
-                                <div class="left__search-img"><img src="img/menu/Search.png" alt=""></div>
-                                <div class="left__search-buttons">
-                                    <button class="left__search-food-button left__search-button-double button">Food</button>
-                                    <button class="left__search-restaurant-button left__search-button-double button">Restaurant</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="search-info__item right">
-                            <h3 class="right__title">Category</h3>
-                            <div class="right__category">
-                                <div class="right__category-item category-card category-card_yellow">
-                                    <div class="category-card__img"><img src="img/menu/Pizza.png" alt="кусочек пиццы"></div>
-                                    <div class="category-card__text category-card__text-yellow">Pizza</div>
-                                </div>
-                                <div class="right__category-item category-card category-card_red">
-                                    <div class="category-card__img"><img src="img/menu/Hotdog.png" alt="хотдог"></div>
-                                    <div class="category-card__text category-card__text-red">Asian</div>
-                                </div>
-                                <div class="right__category-item category-card category-card_orange">
-                                    <div class="category-card__img"><img src="img/menu/Doughnut.png" alt="донат"></div>
-                                    <div class="category-card__text category-card__text-orange">Donat</div>
-                                </div>
-                                <div class="right__category-item category-card category-card_blue">
-                                    <div class="category-card__img"><img src="img/menu/Icecream.png" alt="мороженое"></div>
-                                    <div class="category-card__text category-card__text-blue">Ice</div>
-                                </div>
-                            </div>
-                            <h3 class="right__title">Sort By</h3>
-                            <div class="right__sort">
-                                <div class="right__sort-items">
-                                    <div class="right__sort-item">Recomended</div>
-                                    <div class="right__sort-item">Most Popular</div>
-                                </div>
-                                <div class="right__sort-items">
-                                    <div class="right__sort-item">Fast Delivery</div>
-                                </div>
-                            </div>
-                            <h3 class="right__title">Price</h3>
-                            <div class="right__price">
-                                <progress class="right__price-progress"></progress>
-                                <div class="right__price-circle"><img src="img/menu/Ellipse.png" alt="фиолетовый бегунок"></div>
-                                <div class="right__price-digits">
-                                    <div class="right__price-digit">$0</div>
-                                    <div class="right__price-digit">$25</div>
-                                    <div class="right__price-digit">$50</div>
-                                    <div class="right__price-digit">$100</div>
-                                    <div class="right__price-digit">$500</div>
-                                    <div class="right__price-digit">$1000</div>
-                                </div>  
-                            </div>
-                            <button class="right__button button">Apply</button>
-                        </div>
-                    </div>
+            <div class="popup__item-left popup-sign">
+              <a href="index.html" class="popup-sign__logo">
+                <img src="img/home/logo.png" alt="logo" />
+              </a>
+              <h3 class="popup-sign__title title">Sign Up To eatly</h3>
+              <form action="#" class="popup-sign__form">
+                <div class="popup-sign__buttons">
+                  <a href="#" class="popup-sign__button"
+                    ><img
+                      src="./img/popup/icons/g-logo.svg"
+                      alt="логотип Google"
+                  /></a>
+                  <a href="#" class="popup-sign__button"
+                    ><img
+                      src="./img/popup/icons/apple-logo.svg"
+                      alt="логотип Apple"
+                  /></a>
                 </div>
+                <div class="popup-sign__or">OR</div>
+                <input
+                  class="popup-sign__user popup-sign__input"
+                  type="text"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  class="popup-sign__mail popup-sign__input"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  class="popup-sign__pasw popup-sign__input"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <input
+                  class="popup-sign__send-form button"
+                  type="submit"
+                  value="SIGN UP"
+                />
+              </form>
+              <div class="popup-sign__text">
+                Already Have An Account?
+                <a href="#" id="popup-up-to-in">Log In</a>
+              </div>
+              <div class="popup-sign__footer">
+                <a href="#" class="popup-sign__footer-policy">Privacy Policy</a>
+                <div class="popup-sign__footer-copyright">Copyright 2022</div>
+              </div>
             </div>
-            <section class="top-restaurants">
-                <div class="container">
-                    <h2 class="top-restaurants__title title">Our Top <span class="title_violet">Restaurants</span></h2>
-                    <div class="top-restaurants__items">
-                        <a href="restaurants-menu1.html" class="top-restaurants__item card-restaurants">
-                            <div class="card-restaurants__img"><img src="img/home/restaurants/resturent-image1.jpg" alt="приготовленная курица с зеленью"></div>
-                            <div class="card-restaurants__content">
-                                <div class="card-restaurants__category">Healthy</div>
-                                <h3 class="card-restaurants__title">The Chicken King</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.8</div>
-                                    </div>
-                                    <div class="dop-info-card__right"><img src="img/home/restaurants/Bookmark.png" alt="фиолетовая закладка"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="restaurants-menu2.html" class="top-restaurants__item card-restaurants">
-                            <div class="card-restaurants__img"><img src="img/home/restaurants/resturent-image2.jpg" alt="разрезанный бургер"></div>
-                            <div class="card-restaurants__content">
-                                <div class="card-restaurants__category card-restaurants__category_red">Trending</div>
-                                <h3 class="card-restaurants__title">The Burger King</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.9</div>
-                                    </div>
-                                    <div class="dop-info-card__right"><img src="img/home/restaurants/Bookmark.png" alt="фиолетовая закладка"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="restaurants-menu3.html" class="top-restaurants__item card-restaurants">
-                            <div class="card-restaurants__img"><img src="img/home/restaurants/resturent-image3.jpg" alt="приготовленная курица с зеленью"></div>
-                            <div class="card-restaurants__content">
-                                <div class="card-restaurants__category">Healthy</div>
-                                <h3 class="card-restaurants__title">The Chicken King</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.8</div>
-                                    </div>
-                                    <div class="dop-info-card__right"><img src="img/home/restaurants/Bookmark.png" alt="фиолетовая закладка"></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <a href="#" class="top-restaurants__button">
-                        <p>View All</p>
-                        <div class="top-restaurants__arrow">
-                            <span></span>
-                            <img src="img/home/restaurants/arrow.png" alt="стрелка вправо">
-                        </div>
-                    </a>
+            <div class="popup__item-right popup-violet">
+              <div class="popup-violet__images">
+                <div class="popup-violet__img-main">
+                  <img src="./img/popup/food.png" alt="тарелка с едой" />
+                  <div class="popup-violet__img-small">
+                    <img
+                      src="./img/popup/food-small.png"
+                      alt="маленькая тарелка с едой"
+                    />
+                  </div>
+                  <div class="popup-violet__img-graf">
+                    <img src="./img/popup/graf.png" alt="график" />
+                  </div>
                 </div>
-            </section>
-			<section class="top-dishes">
-					<div class="container">
-						<h2 class="top-dishes__title title">Our Top <span class="title_violet">Dishes</span> </h2>
-						<div class="top-dishes__items">
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food1.png" alt="блюдо с курицей с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                                <div class="card-restaurants__content">
-                                <div class="card-restaurants__category">Healthy</div>
-                                <h3 class="card-restaurants__title">Chicken Hell</h3>
-                                <div class="card-restaurants__dop-info dop-info-card">
-                                    <div class="dop-info-card__left">
-                                        <div class="dop-info-card__time">24min</div>
-                                        <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                        <div class="dop-info-card__rating">4.8</div>
-                                    </div>
-                                </div>
-                                <div class="card-restaurants__price">
-                                    <div class="card-restaurants__price-digit">$12<span>.99</span></div>
-                                    <div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-                                        </div>
-                                </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food2.png" alt="блюдо с мясом с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category card-restaurants__category_red">Trending</div>
-                           <h3 class="card-restaurants__title">Swe Dish</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">34min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.9</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$19<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food3.png" alt="блюдо с рыбой с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category card-restaurants__category_green">Supreme</div>
-                           <h3 class="card-restaurants__title">Swe Dish</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">34min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.9</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$19<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food4.png" alt="блюдо с рыбой с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category">Healthy</div>
-                           <h3 class="card-restaurants__title">Chicken Hell</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">24min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.8</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$12<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-							<a href="#" class="top-dishes__item card-restaurants">
-								<div class="card-restaurants__img"><img src="img/home/dishes/food5.png" alt="блюдо с мясом с зеленью"></div>
-								<div class="card-restaurants__heart"><img src="img/home/dishes/heart.png" alt="прозрачное сердечко"></div>
-                        <div class="card-restaurants__content">
-                           <div class="card-restaurants__category card-restaurants__category_red">Trending</div>
-                           <h3 class="card-restaurants__title">Swe Dish</h3>
-                           <div class="card-restaurants__dop-info dop-info-card">
-                              <div class="dop-info-card__left">
-                                 <div class="dop-info-card__time">34min</div>
-                                 <img src="img/home/restaurants/Star.png" alt="фиолетовая звездочка">
-                                 <div class="dop-info-card__rating">4.9</div>
-                              </div>
-                           </div>
-								   <div class="card-restaurants__price">
-										<div class="card-restaurants__price-digit">$19<span>.99</span></div>
-										<div class="card-restaurants__price-img"><img src="img/home/dishes/plus.png" alt="белый плюсик на черном фоне"></div>
-								   </div>
-                        </div>
-							</a>
-						</div>
-						<a href="#" class="top-restaurants__button">
-                        <p>View All</p>
-                        <div class="top-restaurants__arrow">
-                            <span></span>
-                            <img src="img/home/restaurants/arrow.png" alt="стрелка вправо">
-                        </div>
-                    </a>
-					</div>
-			</section>
-            <section class="questions">
-                <div class="container">
-                    <div class="questions__title title">Frequently Asked <span class="title_violet">Questions</span><div class="questions__decor"><img src="img/menu/decor.png" alt="три фиолетовые линии"></div></div>
-                    <div class="questions__items">
-                        <div class="questions__item">
-                            <div class="questions__item-text">How long does delivery take?</div>
-                            <div class="questions__item-img"><img src="img/menu/Plus.png" alt="белый плюсик в фиолетовом кружке"></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__item-text">How Does It Work?</div>
-                            <div class="questions__item-img"><img src="img/menu/Plus.png" alt="белый плюсик в фиолетовом кружке"></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__item-text">How does your food delivery service work?</div>
-                            <div class="questions__item-img"><img src="img/menu/Plus.png" alt="белый плюсик в фиолетовом кружке"></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__item-text">What payment options do you accept?</div>
-                            <div class="questions__item-img"><img src="img/menu/Plus.png" alt="белый плюсик в фиолетовом кружке"></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__item-text">Do you offer discounts or promotions?</div>
-                            <div class="questions__item-img"><img src="img/menu/Plus.png" alt="белый плюсик в фиолетовом кружке"></div>
-                        </div>
-                    </div>
+                <div class="popup-violet__img-squares">
+                  <img src="./img/popup/square-grey.png" alt="серый квадрат" />
+                  <div class="popup-violet__img-square-transparent">
+                    <img
+                      src="./img/popup/square-transparent.png"
+                      alt="прозрачный квадрат"
+                    />
+                  </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__navigation">
-                    <a class="footer__logo logo" href="home">
-                        <div class="logo__img"><img src="img/home/logo.png" alt="logo"></div>
-                        <div class="logo__text">eatly</div>
-                    </a>
-                    <nav class="footer__menu">
-                        <ul class="footer__menu-list">
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Menu</a></li>
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Blog</a></li>
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Pricing</a></li>
-                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="popup-violet__img-circle">
+                  <img src="./img/popup/circle.png" alt="серая полусфера" />
                 </div>
-                <div class="footer__info">
-                    <div class="footer__copyright">© 2023 EATLY All Rights Reserved.</div>
-                    <div class="footer__social social">
-                        <a href="#" class="social__item"><img src="img/home/social/insta.svg" alt="instagram"></a>
-                        <a href="#" class="social__item"><img src="img/home/social/fb.svg" alt="instagram"></a>
-                        <a href="#" class="social__item"><img src="img/home/social/twiter.svg" alt="facebook"></a>
-                        <a href="#" class="social__item"><img src="img/home/social/in.svg" alt="twiter"></a>
-                    </div>
+              </div>
+              <div class="popup-violet__info">
+                <h3 class="popup-violet__title title">Find Foods With Love</h3>
+                <div class="popup-violet__text">
+                  Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+                  Dishes Including Asian, Chinese, Italians And Many More. Our
+                  Dashboard Helps You To Manage Orders And Money.
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+        <div id="popup-sign-in" class="popup sign-in">
+          <div class="popup__container container">
+            <div id="popup-signin-close" class="popup-violet__close">
+              <span></span><span></span>
+            </div>
+            <div class="popup__item-left popup-sign">
+              <a href="index.html" class="popup-sign__logo">
+                <img src="img/home/logo.png" alt="logo" />
+              </a>
+              <h3 class="popup-sign__title title">Sign In To eatly</h3>
+              <form action="#" class="popup-sign__form">
+                <div class="popup-sign__buttons">
+                  <a href="#" class="popup-sign__button"
+                    ><img
+                      src="./img/popup/icons/g-logo.svg"
+                      alt="логотип Google"
+                  /></a>
+                  <a href="#" class="popup-sign__button"
+                    ><img
+                      src="./img/popup/icons/apple-logo.svg"
+                      alt="логотип Apple"
+                  /></a>
+                </div>
+                <div class="popup-sign__or">OR</div>
+                <input
+                  class="popup-sign__mail popup-sign__input"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  class="popup-sign__pasw popup-sign__input"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <input
+                  class="popup-sign__send-form button"
+                  type="submit"
+                  value="SIGN UP"
+                />
+              </form>
+              <div class="popup-sign__text">
+                Create A New Account?
+                <a href="#" id="popup-in-to-up">Sign Up</a>
+              </div>
+              <div class="popup-sign__footer">
+                <a href="#" class="popup-sign__footer-policy">Privacy Policy</a>
+                <div class="popup-sign__footer-copyright">Copyright 2022</div>
+              </div>
+            </div>
+            <div class="popup__item-right popup-violet">
+              <div class="popup-violet__images">
+                <div class="popup-violet__img-main">
+                  <img src="./img/popup/food.png" alt="тарелка с едой" />
+                  <div class="popup-violet__img-small">
+                    <img
+                      src="./img/popup/food-small.png"
+                      alt="маленькая тарелка с едой"
+                    />
+                  </div>
+                  <div class="popup-violet__img-graf">
+                    <img src="./img/popup/graf.png" alt="график" />
+                  </div>
+                </div>
+                <div class="popup-violet__img-squares">
+                  <img src="./img/popup/square-grey.png" alt="серый квадрат" />
+                  <div class="popup-violet__img-square-transparent">
+                    <img
+                      src="./img/popup/square-transparent.png"
+                      alt="прозрачный квадрат"
+                    />
+                  </div>
+                </div>
+                <div class="popup-violet__img-circle">
+                  <img src="./img/popup/circle.png" alt="серая полусфера" />
+                </div>
+              </div>
+              <div class="popup-violet__info">
+                <h3 class="popup-violet__title title">Find Foods With Love</h3>
+                <div class="popup-violet__text">
+                  Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+                  Dishes Including Asian, Chinese, Italians And Many More. Our
+                  Dashboard Helps You To Manage Orders And Money.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__container container">
+          <div class="header__navigation">
+            <a class="header__logo logo" href="index.html">
+              <div class="logo__img">
+                <img src="img/home/logo.png" alt="logo" />
+              </div>
+              <div class="logo__text">eatly</div>
+            </a>
+            <nav class="header__menu menu">
+              <div id="burger" class="menu__burger"><span></span></div>
+              <ul id="menu" class="menu__list">
+                <li class="menu__item">
+                  <a href="menu.html" class="menu__link menu__link_active"
+                    >Menu</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="blog.html" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Pricing</a>
+                </li>
+                <li class="menu__item">
+                  <a href="contacts.html" class="menu__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__buttons">
+            <button id="signin" class="header__link">Login</button>
+            <button id="signup" class="header__button button">Sign up</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="search-info">
+          <div class="container">
+            <div class="search-info__items">
+              <div class="search-info__item left">
+                <div class="left__promo promo-left">
+                  <h2 class="promo-left__title">50% OFF</h2>
+                  <div class="promo-left__text">WEEKEND</div>
+                  <div class="promo-left__img">
+                    <img
+                      src="img/home/get50.png"
+                      alt="приготовленное мясо с зеленью на тарелке"
+                    />
+                  </div>
+                  <div class="promo-left__decor">
+                    <img src="img/menu/decor.png" alt="три синие полоски" />
+                  </div>
+                </div>
+                <form action="#" class="left__search">
+                  <input
+                    class="left__search-input"
+                    type="search"
+                    placeholder="Search"
+                  />
+                  <div class="left__search-img">
+                    <img src="img/menu/Search.png" alt="" />
+                  </div>
+                  <div class="left__search-buttons">
+                    <button
+                      class="left__search-food-button left__search-button-double button"
+                    >
+                      Food
+                    </button>
+                    <button
+                      class="left__search-restaurant-button left__search-button-double button"
+                    >
+                      Restaurant
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="search-info__item right">
+                <h3 class="right__title">Category</h3>
+                <div class="right__category">
+                  <div
+                    class="right__category-item category-card category-card_yellow"
+                  >
+                    <div class="category-card__img">
+                      <img src="img/menu/Pizza.png" alt="кусочек пиццы" />
+                    </div>
+                    <div class="category-card__text category-card__text-yellow">
+                      Pizza
+                    </div>
+                  </div>
+                  <div
+                    class="right__category-item category-card category-card_red"
+                  >
+                    <div class="category-card__img">
+                      <img src="img/menu/Hotdog.png" alt="хотдог" />
+                    </div>
+                    <div class="category-card__text category-card__text-red">
+                      Asian
+                    </div>
+                  </div>
+                  <div
+                    class="right__category-item category-card category-card_orange"
+                  >
+                    <div class="category-card__img">
+                      <img src="img/menu/Doughnut.png" alt="донат" />
+                    </div>
+                    <div class="category-card__text category-card__text-orange">
+                      Donat
+                    </div>
+                  </div>
+                  <div
+                    class="right__category-item category-card category-card_blue"
+                  >
+                    <div class="category-card__img">
+                      <img src="img/menu/Icecream.png" alt="мороженое" />
+                    </div>
+                    <div class="category-card__text category-card__text-blue">
+                      Ice
+                    </div>
+                  </div>
+                </div>
+                <h3 class="right__title">Sort By</h3>
+                <div class="right__sort">
+                  <div class="right__sort-items">
+                    <div class="right__sort-item">Recomended</div>
+                    <div class="right__sort-item">Most Popular</div>
+                  </div>
+                  <div class="right__sort-items">
+                    <div class="right__sort-item">Fast Delivery</div>
+                  </div>
+                </div>
+                <h3 class="right__title">Price</h3>
+                <div class="right__price">
+                  <progress class="right__price-progress"></progress>
+                  <div class="right__price-circle">
+                    <img src="img/menu/Ellipse.png" alt="фиолетовый бегунок" />
+                  </div>
+                  <div class="right__price-digits">
+                    <div class="right__price-digit">$0</div>
+                    <div class="right__price-digit">$25</div>
+                    <div class="right__price-digit">$50</div>
+                    <div class="right__price-digit">$100</div>
+                    <div class="right__price-digit">$500</div>
+                    <div class="right__price-digit">$1000</div>
+                  </div>
+                </div>
+                <button class="right__button button">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="top-restaurants">
+          <div class="container">
+            <h2 class="top-restaurants__title title">
+              Our Top <span class="title_violet">Restaurants</span>
+            </h2>
+            <div class="top-restaurants__items">
+              <a
+                href="restaurants-menu1.html"
+                class="top-restaurants__item card-restaurants"
+              >
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/restaurants/resturent-image1.jpg"
+                    alt="приготовленная курица с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">The Chicken King</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                    <div class="dop-info-card__right">
+                      <img
+                        src="img/home/restaurants/Bookmark.png"
+                        alt="фиолетовая закладка"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="restaurants-menu2.html"
+                class="top-restaurants__item card-restaurants"
+              >
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/restaurants/resturent-image2.jpg"
+                    alt="разрезанный бургер"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_red"
+                  >
+                    Trending
+                  </div>
+                  <h3 class="card-restaurants__title">The Burger King</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                    <div class="dop-info-card__right">
+                      <img
+                        src="img/home/restaurants/Bookmark.png"
+                        alt="фиолетовая закладка"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="restaurants-menu3.html"
+                class="top-restaurants__item card-restaurants"
+              >
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/restaurants/resturent-image3.jpg"
+                    alt="приготовленная курица с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">The Chicken King</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                    <div class="dop-info-card__right">
+                      <img
+                        src="img/home/restaurants/Bookmark.png"
+                        alt="фиолетовая закладка"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="top-restaurants__button">
+              <p>View All</p>
+              <div class="top-restaurants__arrow">
+                <span></span>
+                <img
+                  src="img/home/restaurants/arrow.png"
+                  alt="стрелка вправо"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="top-dishes">
+          <div class="container">
+            <h2 class="top-dishes__title title">
+              Our Top <span class="title_violet">Dishes</span>
+            </h2>
+            <div class="top-dishes__items">
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food1.png"
+                    alt="блюдо с курицей с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">Chicken Hell</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $12<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food2.png"
+                    alt="блюдо с мясом с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_red"
+                  >
+                    Trending
+                  </div>
+                  <h3 class="card-restaurants__title">Swe Dish</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">34min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $19<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food3.png"
+                    alt="блюдо с рыбой с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_green"
+                  >
+                    Supreme
+                  </div>
+                  <h3 class="card-restaurants__title">Swe Dish</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">34min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $19<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food4.png"
+                    alt="блюдо с рыбой с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div class="card-restaurants__category">Healthy</div>
+                  <h3 class="card-restaurants__title">Chicken Hell</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">24min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.8</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $12<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="top-dishes__item card-restaurants">
+                <div class="card-restaurants__img">
+                  <img
+                    src="img/home/dishes/food5.png"
+                    alt="блюдо с мясом с зеленью"
+                  />
+                </div>
+                <div class="card-restaurants__heart">
+                  <img
+                    src="img/home/dishes/heart.png"
+                    alt="прозрачное сердечко"
+                  />
+                </div>
+                <div class="card-restaurants__content">
+                  <div
+                    class="card-restaurants__category card-restaurants__category_red"
+                  >
+                    Trending
+                  </div>
+                  <h3 class="card-restaurants__title">Swe Dish</h3>
+                  <div class="card-restaurants__dop-info dop-info-card">
+                    <div class="dop-info-card__left">
+                      <div class="dop-info-card__time">34min</div>
+                      <img
+                        src="img/home/restaurants/Star.png"
+                        alt="фиолетовая звездочка"
+                      />
+                      <div class="dop-info-card__rating">4.9</div>
+                    </div>
+                  </div>
+                  <div class="card-restaurants__price">
+                    <div class="card-restaurants__price-digit">
+                      $19<span>.99</span>
+                    </div>
+                    <div class="card-restaurants__price-img">
+                      <img
+                        src="img/home/dishes/plus.png"
+                        alt="белый плюсик на черном фоне"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="top-restaurants__button">
+              <p>View All</p>
+              <div class="top-restaurants__arrow">
+                <span></span>
+                <img
+                  src="img/home/restaurants/arrow.png"
+                  alt="стрелка вправо"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="container">
+            <div class="questions__title title">
+              Frequently Asked <span class="title_violet">Questions</span>
+              <div class="questions__decor">
+                <img src="img/menu/decor.png" alt="три фиолетовые линии" />
+              </div>
+            </div>
+            <div class="questions__items">
+              <div class="questions__item">
+                <div class="questions__item-text">
+                  How long does delivery take?
+                </div>
+                <div class="questions__item-img">
+                  <img
+                    src="img/menu/Plus.png"
+                    alt="белый плюсик в фиолетовом кружке"
+                  />
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__item-text">How Does It Work?</div>
+                <div class="questions__item-img">
+                  <img
+                    src="img/menu/Plus.png"
+                    alt="белый плюсик в фиолетовом кружке"
+                  />
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__item-text">
+                  How does your food delivery service work?
+                </div>
+                <div class="questions__item-img">
+                  <img
+                    src="img/menu/Plus.png"
+                    alt="белый плюсик в фиолетовом кружке"
+                  />
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__item-text">
+                  What payment options do you accept?
+                </div>
+                <div class="questions__item-img">
+                  <img
+                    src="img/menu/Plus.png"
+                    alt="белый плюсик в фиолетовом кружке"
+                  />
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__item-text">
+                  Do you offer discounts or promotions?
+                </div>
+                <div class="questions__item-img">
+                  <img
+                    src="img/menu/Plus.png"
+                    alt="белый плюсик в фиолетовом кружке"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__navigation">
+            <a class="footer__logo logo" href="home">
+              <div class="logo__img">
+                <img src="img/home/logo.png" alt="logo" />
+              </div>
+              <div class="logo__text">eatly</div>
+            </a>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Menu</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Blog</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Pricing</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__info">
+            <div class="footer__copyright">
+              © 2023 EATLY All Rights Reserved.
+            </div>
+            <div class="footer__social social">
+              <a href="#" class="social__item"
+                ><img src="img/home/social/insta.svg" alt="instagram"
+              /></a>
+              <a href="#" class="social__item"
+                ><img src="img/home/social/fb.svg" alt="instagram"
+              /></a>
+              <a href="#" class="social__item"
+                ><img src="img/home/social/twiter.svg" alt="facebook"
+              /></a>
+              <a href="#" class="social__item"
+                ><img src="img/home/social/in.svg" alt="twiter"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	 <script src="js/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
