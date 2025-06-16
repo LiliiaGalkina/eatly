@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextArrow = document.querySelector(".slick-next");
   const slides = document.querySelectorAll(".slider__item");
 
+	if (prevArrow && nextArrow) {
   const arrowCheck = (arrow) => {
     if (arrow.classList.contains("slick-disabled")) {
       arrow.style.opacity = 0.2;
@@ -56,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     arrowCheck(prevArrow);
     arrowCheck(nextArrow);
   });
+	
+}
 });
 
 //prising-mobile
