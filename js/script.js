@@ -68,7 +68,7 @@ const features2 = document.querySelector("#features2");
 const featuresItems2 = document.querySelector("#features-items2");
 const featuresArrow2 = document.querySelector("#features-arrow2");
 
-features1.addEventListener("click", function() {
+/*features1.addEventListener("click", function() {
   featuresArrow1.classList.toggle("features-arrow-rotate");
   featuresItems1.classList.toggle("features-items-show");
 });
@@ -76,4 +76,45 @@ features1.addEventListener("click", function() {
 features2.addEventListener("click", function() {
   featuresArrow2.classList.toggle("features-arrow-rotate");
   featuresItems2.classList.toggle("features-items-show");
+});*/
+
+
+//popup sign-up
+const buttonSignUp = document.querySelector("#signup");
+const popupSignUp = document.querySelector("#popup-sign-up");
+const buttonSignUpClose = document.querySelector("#popup-signup-close");
+
+buttonSignUp.addEventListener("click", function () {
+	popupSignUp.style.display = "block";
+})
+
+buttonSignUpClose.addEventListener("click", function () {
+	popupSignUp.style.display = "none";
+})
+
+//popup sign-in
+const buttonSignIn = document.querySelector("#signin");
+const popupSignIn = document.querySelector("#popup-sign-in");
+const buttonSignInClose = document.querySelector("#popup-signin-close");
+const buttonPopupUpToIn = document.querySelector("#popup-up-to-in");
+const buttonPopupInToUp = document.querySelector("#popup-in-to-up");
+
+buttonSignIn.addEventListener("click", function () {
+  popupSignIn.style.display = "block";
+});
+
+buttonSignInClose.addEventListener("click", function () {
+  popupSignIn.style.display = "none";
+});
+
+buttonPopupUpToIn.addEventListener("click", function (e) {
+	e.preventDefault();
+	popupSignUp.style.display = "none";
+	 popupSignIn.style.display = "block";
+})
+
+buttonPopupInToUp.addEventListener("click", function (e) {
+  e.preventDefault();
+  popupSignUp.style.display = "block";
+  popupSignIn.style.display = "none";
 });
